@@ -43,7 +43,7 @@ const Home = () => {
           </div>
 
           <p className="text-md sm:text-lg md:text-2xl mt-2 text-center bg-gradient-to-b from-[#eef1f3] via-[#dee2e4] to-[#98b5a4] text-transparent bg-clip-text font-bold">
-            11 SEPTEMBER 2024, RIYADH, SAUDI ARABIA
+            11 SEPTEMBER 2024, OMAN
           </p>
         </div>
       </section>
