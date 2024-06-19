@@ -4,12 +4,14 @@ import Banner from "../assets/images/Arab.jpeg";
 import UIClogo from "../assets/images/UIC.png";
 import AboutSection from "./AboutSection";
 import SpeakerSection from "./SpeakerSection";
+import IndustrySection from "./IndustrySection";
+import JobsSectionTemp from "./JobsSectionTemp";
+import RegistrationFormSection from "./RegistrationFormSection";
 
 const Home = () => {
   return (
     <div className="bg-[#000814] flex flex-col min-h-screen w-screen">
-
-    {/* Main Overview */}
+      {/* Main Overview */}
       <section
         className="relative bg-cover bg-center xl:h-screen sm:h-screen md:h-screen items-center"
         style={{ backgroundImage: `url(${Banner})` }}
@@ -46,24 +48,42 @@ const Home = () => {
         </div>
       </section>
 
-    {/* About section */}
-    <section
+      {/* About section */}
+      <section
         className="relative mx-auto my-20 flex w-11/12 max-w-maxContent flex-col items-center justify-between gap-8 bg-[#000814] text-white"
         id="about"
       >
         <AboutSection />
-    </section>
-    
-    <section
+      </section>
+
+      {/* Speaker section */}
+      <section
         className="relative mx-auto flex w-11/12 max-w-maxContent flex-col items-center justify-between gap-8 bg-[#000814] text-white"
         id="speakers"
       >
         <SpeakerSection />
-    </section>
+      </section>
 
+      {/* Industry section */}
+      <section
+        className="relative mx-auto mt-20  flex w-full max-w-maxContent flex-col items-center justify-between gap-8 bg-white text-white"
+        id="industry"
+      >
+        <IndustrySection />
+      </section>
 
+      {/* Job section */}
+      <section
+        className="relative mx-auto mt-10 flex w-11/12 max-w-maxContent flex-col items-center justify-between gap-8 bg-[#000814] text-white"
+        id="jobs"
+      >
+        <JobsSectionTemp />
+      </section>
 
-
+      {/* Registration form */}
+      <section>
+        <RegistrationFormSection />
+      </section>
     </div>
   );
 };

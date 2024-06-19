@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 const Header = ({ logo }) => {
-  const navItems = ["HOME", "ABOUT", "SPEAKERS", "JOBS", "INDUSTRY"];
+  const navItems = ["HOME", "ABOUT", "SPEAKERS", "INDUSTRY", "JOBS"];
 
   return (
     <header>
