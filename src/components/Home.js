@@ -1,6 +1,5 @@
 import Header from "./Header";
 import HighlightText from "./HighlightText";
-import Banner from "../assets/images/Arab.jpeg";
 import UIClogo from "../assets/images/UIC.png";
 import AboutSection from "./AboutSection";
 import SpeakerSection from "./SpeakerSection";
@@ -12,10 +11,19 @@ const Home = () => {
   return (
     <div className="bg-[#000814] flex flex-col min-h-screen w-screen">
       {/* Main Overview */}
-      <section
-        className="relative bg-cover bg-center xl:h-screen sm:h-screen md:h-screen items-center"
-        style={{ backgroundImage: `url(${Banner})` }}
-      >
+      <section className="relative bg-cover bg-center xl:h-screen sm:h-screen md:h-screen items-center">
+        {/* Video background */}
+        <video
+          autoPlay
+          loop
+          muted
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source
+            src="https://saudi.smartdataseries.com/wp-content/themes/smartdataseries/assets/images/video/main-banner.mp4?d=103704"
+            type="video/mp4"
+          />
+        </video>
         {/* Black gradient overlay */}
         <div className="absolute inset-0 bg-black bg-opacity-60"></div>
 
