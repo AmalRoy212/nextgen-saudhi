@@ -1,7 +1,10 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
+
 const Header = ({ logo }) => {
-  const navItems = ["HOME", "ABOUT", "SPEAKERS", "INDUSTRY", "JOBS"];
+  // const navItems = ["HOME", "ABOUT", "SPEAKERS", "INDUSTRY", "JOBS"];
+  const navItems = ["HOME", "ABOUT", "INDUSTRY", "JOBS"];
 
   return (
     <header>
@@ -12,7 +15,7 @@ const Header = ({ logo }) => {
         </a>
 
         {/* Navigation Links */}
-        <ul className="hidden sm:flex gap-5 font-mullish text-white">
+        <ul className="hidden sm:flex gap-5 font-mullish text-white items-center">
           {navItems.map((item, index) => (
             <li
               key={index}
@@ -22,6 +25,11 @@ const Header = ({ logo }) => {
               <div className="absolute bottom-5 w-full h-1 bg-deepBlue hidden group-hover:block transition-all duration-200"></div>
             </li>
           ))}
+            <Link to="/register-form">
+              <button className="py-2 px-4 bg-blue-500 text-white font-semibold rounded hover:bg-blue-700 transition-all duration-200">
+                REGISTER
+              </button>
+            </Link>
         </ul>
 
         {/* Responsive Menu Icon */}

@@ -186,7 +186,7 @@ const RegistrationForm = () => {
 
       <div className="flex flex-col gap-2">
         <label htmlFor="event" className="lable-style">
-          Which of the events are you interested in attending?
+        I am interested in
         </label>
         <select
           name="event"
@@ -196,12 +196,14 @@ const RegistrationForm = () => {
         >
           <option value="">Select</option>
           <option value="UIC Data Analytics Conference & Awards 2024">
-            UIC Data Analytics Conference & Awards 2024
+          Attend as a Delegate 
           </option>
           <option value="UIC Low Code No Code Conference & Awards 2024">
-            UIC Low Code No Code Conference & Awards 2024
+          Attend as a Speaker
           </option>
-          <option value="Both">Both</option>
+          <option value="UIC Low Code No Code Conference & Awards 2024">
+          Attend as a Partner
+          </option>
         </select>
         {errors.event && (
           <span className="-mt-1 text-[12px] text-yellow-400">

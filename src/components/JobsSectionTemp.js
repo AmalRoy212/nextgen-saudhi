@@ -58,17 +58,18 @@ const JobsSectionTemp = () => {
   return (
     <div className="flex flex-col items-center max-w-[1200px] p-8 bg-[#000820] text-white rounded-lg shadow-lg">
       <div className="flex flex-col gap-5 justify-center">
-        <h1 className="lg:w-[100%] text-center text-5xl font-mullish font-bold">
-          WHO SHOULD
-          <HighlightText text={" ATTEND ?"} />
+        <h1 className="lg:w-[100%] text-center text-4xl font-mullish font-bold">
+          BY JOB <HighlightText text={" TITLE"} />
         </h1>
-        <div className="w-1/2 h-1 mt-1 bg-white mx-auto"></div>
+        <div className="w-11/12 h-1  bg-white mx-auto"></div>
       </div>
 
-      <div className="mt-5">
-        <h2 className="text-center text-3xl font-bold font-mullish">
-          JOB TITLE
-        </h2>
+      {/* <div className="mt-5"> */}
+
+        {/* <h2 className="text-center text-xl font-bold font-mullish">
+         BY JOB TITLE
+        </h2> */}
+
         {/* <div className="flex flex-wrap justify-center mt-7 gap-6 ">
               {jobTitle.map((category, index) => (
                 <div
@@ -79,7 +80,8 @@ const JobsSectionTemp = () => {
                 </div>
               ))}
             </div> */}
-      </div>
+
+      {/* </div> */}
 
       <div className="mt-8">
         <div className="flex flex-wrap justify-center mt-4 gap-4">

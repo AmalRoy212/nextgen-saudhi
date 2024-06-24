@@ -1,5 +1,6 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./Home";
+import RegistrationFormSection from "./RegistrationFormSection";
 
 const Body = () => {
   const appRouter = createBrowserRouter([
@@ -7,7 +8,12 @@ const Body = () => {
       path: "/",
       element: <Home />,
     },
+    {
+      path: "/register-form",
+      element: <RegistrationFormSection />,
+    },
   ]);
+
   return (
     <div>
       <RouterProvider router={appRouter} />

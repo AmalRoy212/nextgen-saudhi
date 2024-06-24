@@ -2,7 +2,7 @@ import Header from "./Header";
 import HighlightText from "./HighlightText";
 import UIClogo from "../assets/images/UIC.png";
 import AboutSection from "./AboutSection";
-import SpeakerSection from "./SpeakerSection";
+// import SpeakerSection from "./SpeakerSection";
 import IndustrySection from "./IndustrySection";
 import JobsSectionTemp from "./JobsSectionTemp";
 import RegistrationFormSection from "./RegistrationFormSection";
@@ -51,7 +51,7 @@ const Home = () => {
           </div>
 
           <p className="text-md sm:text-lg md:text-2xl mt-2 text-center bg-gradient-to-b from-[#eef1f3] via-[#dee2e4] to-[#98b5a4] text-transparent bg-clip-text font-bold">
-            11 SEPTEMBER 2024, OMAN
+            11th SEPTEMBER 2024, MUSCAT, OMAN
           </p>
         </div>
       </section>
@@ -65,12 +65,12 @@ const Home = () => {
       </section>
 
       {/* Speaker section */}
-      <section
+      {/* <section
         className="relative mx-auto flex w-11/12 max-w-maxContent flex-col items-center justify-between gap-8 bg-[#000814] text-white"
         id="speakers"
       >
         <SpeakerSection />
-      </section>
+      </section> */}
 
       {/* Industry section */}
       <section
