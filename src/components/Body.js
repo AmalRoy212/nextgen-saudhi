@@ -1,23 +1,28 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import Layout from "./Layout";
 import Home from "./Home";
 import RegistrationFormSection from "./RegistrationFormSection";
 
-const Body = () => {
-  const appRouter = createBrowserRouter([
-    {
-      path: "/",
-      element: <Home />,
-    },
-    {
-      path: "/register-form",
-      element: <RegistrationFormSection />,
-    },
-  ]);
+const appRouter = createBrowserRouter([
+  {
+    path: "/",
+    element: <Layout />,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "register-form",
+        element: <RegistrationFormSection />,
+      },
+    ],
+  },
+]);
 
+const Body = () => {
   return (
-    <div>
-      <RouterProvider router={appRouter} />
-    </div>
+    <RouterProvider router={appRouter} />
   );
 };
 

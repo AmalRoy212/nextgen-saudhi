@@ -57,6 +57,7 @@ const jobTitlePosts = [
 const JobsSectionTemp = () => {
   return (
     <div className="flex flex-col items-center max-w-[1200px] p-8 bg-[#000820] text-white rounded-lg shadow-lg">
+
       <div className="flex flex-col gap-5 justify-center">
         <h1 className="lg:w-[100%] text-center text-4xl font-mullish font-bold">
           BY JOB <HighlightText text={" TITLE"} />

@@ -4,7 +4,7 @@ import RegistrationForm from "./RegistrationForm";
 const RegistrationFormSection = () => {
   return (
     <div className="bg-[#000814] flex flex-col min-h-screen w-screen">
-      <div className="mx-auto mt-20 mb-5 flex w-[1200px] max-w-maxContent flex-col justify-between gap-10 text-white lg:flex-row">
+      <div className="mx-auto mt-14 mb-5 flex w-[1200px] max-w-maxContent flex-col justify-between gap-10 text-white lg:flex-row">
         <div className="lg:w-[40%]">
           <RegistrationDetails />
         </div>

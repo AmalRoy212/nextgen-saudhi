@@ -11,7 +11,9 @@ const Home = () => {
   return (
     <div className="bg-[#000814] flex flex-col min-h-screen w-screen">
       {/* Main Overview */}
-      <section className="relative bg-cover bg-center xl:h-screen sm:h-screen md:h-screen items-center">
+      <section
+       className="relative bg-cover  bg-center xl:h-screen sm:h-screen md:h-screen items-center"
+      >
         {/* Video background */}
         <video
           autoPlay
@@ -89,7 +91,7 @@ const Home = () => {
       </section>
 
       {/* Registration form */}
-      <section>
+      <section className=" bg-[#000814] items-center">
         <RegistrationFormSection />
       </section>
     </div>
