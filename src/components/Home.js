@@ -22,7 +22,7 @@ const Home = () => {
           className="absolute inset-0 w-full h-full object-cover"
         >
           <source
-            src="https://saudi.smartdataseries.com/wp-content/themes/smartdataseries/assets/images/video/main-banner.mp4?d=103704"
+            src="https://videos.pexels.com/video-files/3129576/3129576-uhd_2560_1440_30fps.mp4"
             type="video/mp4"
           />
         </video>
