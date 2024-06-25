@@ -11,9 +11,7 @@ const Home = () => {
   return (
     <div className="bg-[#000814] flex flex-col min-h-screen w-screen">
       {/* Main Overview */}
-      <section
-       className="relative bg-cover  bg-center xl:h-screen sm:h-screen md:h-screen items-center"
-      >
+      <section className="relative bg-cover  bg-center xl:h-screen sm:h-screen md:h-screen items-center">
         {/* Video background */}
         <video
           autoPlay
@@ -53,8 +51,9 @@ const Home = () => {
           </div>
 
           <p className="text-md sm:text-lg md:text-2xl mt-2 text-center bg-gradient-to-b from-[#eef1f3] via-[#dee2e4] to-[#98b5a4] text-transparent bg-clip-text font-bold">
-            11th SEPTEMBER 2024, MUSCAT, OMAN
+            SEPTEMBER 11th, 2024, MUSCAT, OMAN
           </p>
+          
         </div>
       </section>
 
