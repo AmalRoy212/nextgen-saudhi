@@ -1,4 +1,5 @@
 import HighlightText from "./HighlightText";
+import AboutImg from "../assets/images/AboutUIC.jpeg"
 
 const AboutSection = () => {
   return (
@@ -6,7 +7,7 @@ const AboutSection = () => {
       <div className="flex flex-col lg:flex-row mx-auto max-w-[1200px] gap-20 items-center">
         <div className="lg:w-[50%]">
           <img
-            src="https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg"
+            src={AboutImg}
             alt="AboutImage"
             className="shadow-white shadow-[-20px_-20px_0_0]"
           />
