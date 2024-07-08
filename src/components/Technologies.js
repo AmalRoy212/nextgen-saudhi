@@ -4,15 +4,15 @@ import makeLogo from "../assets/images/makeUIC.svg";
 import solaceLogo from "../assets/images/solaceUIC.svg";
 import denodoLogo from "../assets/images/denodoUIC.svg";
 import kissflowLogo from "../assets/images/kissflowUIC.svg";
-import dbtLogo from "../assets/images/dbtUIC.svg";
-import exalateLogo from "../assets/images/exalateUIC.svg";
+// import dbtLogo from "../assets/images/dbtUIC.svg";
+// import exalateLogo from "../assets/images/exalateUIC.svg";
 import cleverflowLogo from "../assets/images/cleverflowUIC.png";
 import odooLogo from "../assets/images/OdooUIC.svg";
 import HighlightText from "./HighlightText";
 
 const Technologies = () => {
   return (
-    <div className="bg-white max-w-[1300px] py-14 px-8 flex flex-col">
+    <div className="bg-white max-w-[1300px] py-14 px-8  mt-10 flex flex-col">
 
       <div className="flex flex-col gap-7 justify-center items-center">
         <h1 className="lg:w-[100%] text-black text-center uppercase text-5xl font-mullish font-bold">
