@@ -1,69 +1,72 @@
-import HighlightText from './HighlightText'; 
-import governmentIconImage from '../assets/images/GovernmentIcon.png';
-import bankIconImage from '../assets/images/bankIconImage.png';
-import insuranceIconImage from '../assets/images/insuranceIcon.webp';
-import healthIconImage from '../assets/images/HealthIcon.png';
-import fmcgIconImage from '../assets/images/fmcgIcon.webp';
-import manufacturingIconImage from '../assets/images/manufacturingIcon.webp';
-import retailIconImage from '../assets/images/realEstateIcon.png';
-import ecommerceIconImage from '../assets/images/ecommerceIcon.webp';
-import mediaIconImage from '../assets/images/mediaIcon.png';
-import energyIconImage from '../assets/images/energyIcon.webp';
-import realEstateIconImage from '../assets/images/realEstateIcon.png';
-import transportationIconImage from '../assets/images/transportationIcon.png';
-import tourismIconImage from '../assets/images/toursimIcon.webp';
-import utilitiesIconImage from '../assets/images/utilitiesIcon.png';
-import logisticsIconImage from '../assets/images/logisticsIcon.png';
-import educationIconImage from '../assets/images/educationIcon.webp';
+import governmentIconImage from '../assets/images/GovernmentUIC.svg';
+import bankIconImage from '../assets/images/BankUIC.svg';
+import insuranceIconImage from '../assets/images/InsuranceUIC.svg';
+import ecommerceIconImage from '../assets/images/EcommerceUIC.svg';
+import telecomIconImage from '../assets/images/TelecomUIC.svg';
+import oilGasIconImage from '../assets/images/OilAndGasUIC.svg';
+import retailIconImage from '../assets/images/RetailUIC.svg';
+import healthcareIconImage from '../assets/images/HealthCareUIC.svg';
+import miningIconImage from '../assets/images/MiningUIC.svg';
+import fmcgIconImage from '../assets/images/FmcgUIC.svg';
+import mediaIconImage from '../assets/images/MediaUIC.svg';
+import aviationIconImage from '../assets/images/AvacationUIC.svg';
+import logisticsIconImage from '../assets/images/LogisticsUIC.svg';
+import constructionIconImage from '../assets/images/ConstructionUIC.svg';
+import educationIconImage from '../assets/images/EducationUIC.svg';
+import agricultureIconImage from '../assets/images/AgricultueUIC.svg';
+import hospitalityIconImage from '../assets/images/HospitalityUIC.svg';
+import automobileIconImage from '../assets/images/AutomobileUIC.svg';
+import HighlightText from './HighlightText';
 
 const industries = [
   { name: 'GOVERNMENT', icon: governmentIconImage },
-  { name: 'BFSI', icon: bankIconImage },
+  { name: 'BANK', icon: bankIconImage },
   { name: 'INSURANCE', icon: insuranceIconImage },
-  { name: 'HEALTHCARE & PHARMACEUTICALS', icon: healthIconImage },
-  { name: 'FMCG/CPG', icon: fmcgIconImage },
-  { name: 'MANUFACTURING', icon: manufacturingIconImage },
+  { name: 'ECOMMERCE', icon: ecommerceIconImage },
+  { name: 'TELECOM', icon: telecomIconImage },
+  { name: 'OIL & GAS', icon: oilGasIconImage },
   { name: 'RETAIL', icon: retailIconImage },
-  { name: 'E-COMMERCE', icon: ecommerceIconImage },
-  { name: 'MEDIA AND ENTERTAINMENT', icon: mediaIconImage },
-  { name: 'ENERGY AND UTILITIES', icon: energyIconImage },
-  { name: 'REAL ESTATE & INFRASTRUCTURE', icon: realEstateIconImage },
-  { name: 'TRANSPORTATION', icon: transportationIconImage },
-  { name: 'TOURISM AND HOSPITALITY', icon: tourismIconImage },
-  { name: 'UTILITIES', icon: utilitiesIconImage },
+  { name: 'HEALTHCARE', icon: healthcareIconImage },
+  { name: 'MINING', icon: miningIconImage },
+  { name: 'FMCG', icon: fmcgIconImage },
+  { name: 'MEDIA', icon: mediaIconImage },
+  { name: 'AVIATION', icon: aviationIconImage },
   { name: 'LOGISTICS', icon: logisticsIconImage },
+  { name: 'CONSTRUCTION', icon: constructionIconImage },
   { name: 'EDUCATION', icon: educationIconImage },
+  { name: 'AGRICULTURE', icon: agricultureIconImage },
+  { name: 'HOSPITALITY', icon: hospitalityIconImage },
+  { name: 'AUTOMOBILE', icon: automobileIconImage },
 ];
 
 const IndustrySection = () => {
   return (
-    <div className="bg-white max-w-[1150px] py-14 px-8 flex flex-col"> {/* Adjusted padding */}
-
-      <div className="flex flex-col gap-6 justify-center"> {/* Adjusted gap */}
+    <div className="bg-white max-w-[1150px] py-14 px-8 flex flex-col">
+      <div className="flex flex-col gap-6 justify-center">
         <h1 className="lg:w-[100%] text-black text-center text-5xl font-mullish font-bold">
           WHO SHOULD <HighlightText text=" ATTEND ?" />
         </h1>
         <div className="w-1/2 h-1 mt-1 bg-black mx-auto"></div>
       </div>
 
-      <div className="flex gap-5 pt-12 items-center"> {/* Adjusted padding */}
+      <div className="flex gap-5 pt-12 items-center">
         <div className="h-16 w-1 bg-deepBlue mx-auto"></div>
         <h1 className="w-full text-deepBlue font-mullish text-5xl font-semibold">
           BY INDUSTRY
         </h1>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-10"> {/* Adjusted grid gap and margin */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 mt-10">
         {industries.map((industry, index) => (
           <div
             key={index}
-            className="relative cursor-pointer overflow-hidden bg-white px-6 pt-6 pb-4 shadow-xl ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl rounded-lg"
+            className="relative cursor-pointer overflow-hidden bg-white px-8 py-8 shadow-xl ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl rounded-lg"
           >
             <div className="flex flex-col items-center">
-              <div className="pt-2 text-deepBlue text-5xl"> {/* Further reduced icon size */}
-                <img src={industry.icon} alt={industry.name} className="h-12 w-12" style={{ filter: 'invert(0%)' }} /> {/* Made icon color black */}
+              <div className="pt-4 text-deepBlue text-5xl">
+                <img src={industry.icon} alt={industry.name} className="h-10 w-10" style={{ filter: 'invert(0%)' }} />
               </div>
-              <div className="pt-6 text-lg font-semibold leading-5 text-center"> {/* Increased text size and adjusted padding */}
+              <div className="pt-6 text-lg font-semibold leading-5 text-center">
                 <p className="text-deepBlue">
                   {industry.name}
                 </p>

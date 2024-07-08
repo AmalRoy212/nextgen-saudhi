@@ -16,12 +16,12 @@ const registrationDetails = [
       details:
         "Akshya Nagar 1st Block 1st Cross, Rammurthy nagar, Bangalore-560016",
     },
-    {
-      icon: "IoCall",
-      heading: "Call us",
-      description: "Mon - Fri From 8am to 5pm",
-      details: "+123 456 7869",
-    },
+    // {
+    //   icon: "IoCall",
+    //   heading: "Call us",
+    //   description: "Mon - Fri From 8am to 5pm",
+    //   details: "+123 456 7869",
+    // },
   ]
 
 const RegistrationDetails = () => {

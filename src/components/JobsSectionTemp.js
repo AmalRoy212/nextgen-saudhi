@@ -8,10 +8,14 @@ import HighlightText from "./HighlightText";
 
 const jobTitlePosts = [
   "Chief Executive Officer (CEO)",
+  "Head of Digital Transformation",
   "Chief Technology Officer (CTO)",
   "Chief Information Officer (CIO)",
+  "Digital Transformation Leads",
   "Chief Data Officer (CDO)",
   "Chief Data Scientist (CDS)",
+  "VP of Digital Transformation",
+  
   // "Chief Analytics Officer (CAO) ",
   // "Chief Data & Analytics Officer (CDAO)",
   // "Chief Data Privacy Officer (CDPO)",

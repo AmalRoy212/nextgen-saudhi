@@ -13,13 +13,13 @@ const AboutSection = () => {
         </div>
         <div className="lg:w-[50%] flex gap-10 flex-col">
           <h1 className="lg:w-[100%] text-center text-4xl font-semibold ">
-            About
+            About 
             <HighlightText text={" Conference"} />
           </h1>
 
           <p className="font-medium text-[16px] text-justify w-[100%] text-[#838894]">
-            The UIC Data Analytics & Low Code No Code Conference & Awards 2024
-            is a landmark event bringing together chief data analytics officers,
+            The UIC Data Analytics & Low Code No Code Conference (LCNC) 2024 is
+            a landmark event bringing together chief data analytics officers,
             chief technology officers, and leaders in data, analytics, and low
             code/no code development. This conference is designed for those
             striving to revolutionize their organizations through the power of
@@ -33,7 +33,7 @@ const AboutSection = () => {
             head-on, equipping attendees with the tools to scale initiatives
             using best practices in data management, architecture, governance,
             and software development. At the UIC Data Analytics & Low Code No
-            Code Conference & Awards, participants will gain insights into
+            Code Conference 2024, participants will gain insights into
             maximizing business impact within budget constraints, aligning data
             and analytics strategies, embracing AI adoption, and optimizing
             development workflows. The event fosters collaboration between IT
