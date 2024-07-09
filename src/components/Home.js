@@ -51,9 +51,22 @@ const Home = () => {
             </a>
           </div>
 
-      
+          {/* <p className=" flex items-center justify-center gap-6 text-lg sm:text-xl md:text-2xl mt-2 text-center bg-gradient-to-b from-[#eef1f3] via-[#dee2e4] to-[#98b5a4] text-transparent bg-clip-text font-bold">
+            <div className="flex gap-2 justify-center items-center">
+              <i className="fa-regular fa-calendar bg-gradient-to-b from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] text-transparent bg-clip-text"></i>
+              <HighlightText text={" 12 SEPTEMBER 2024"} /> 
+            </div>
+            <div className="flex gap-2 justify-center items-center">
+              <i className="fa-solid fa-hotel bg-gradient-to-b from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] text-transparent bg-clip-text"></i>
+              <HighlightText text={" INTERCITYHOTEL"} />   
+            </div>
+            <div className="flex gap-2 justify-center items-center">
+              <i className="fa-solid fa-location-dot bg-gradient-to-b from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] text-transparent bg-clip-text"></i> 
+              <HighlightText text={" MUSCAT, OMAN"} /> 
+            </div>
+          </p> */}
 
-          <p className=" flex items-center justify-center gap-6 text-lg sm:text-xl md:text-2xl mt-2 text-center bg-gradient-to-b from-[#eef1f3] via-[#dee2e4] to-[#98b5a4] text-transparent bg-clip-text font-bold">
+          <p className=" flex items-center justify-center gap-6 text-lg sm:text-xl md:text-2xl mt-2 text-center text-white text-transparent bg-clip-text font-bold">
             <div className="flex gap-2 justify-center items-center">
               <i className="fa-regular fa-calendar"></i>
               12 SEPTEMBER 2024
@@ -68,9 +81,6 @@ const Home = () => {
             </div>
           </p>
 
-          {/* <p className="text-2xl sm:text-3xl md:text-4xl mt-2 text-center bg-gradient-to-b from-[#eef1f3] via-[#dee2e4] to-[#98b5a4] text-transparent bg-clip-text font-bold">
-            SOUTH AL KHUWAIR, BOUSHER, MUSCAT, OMAN
-          </p> */}
         </div>
       </section>
 
