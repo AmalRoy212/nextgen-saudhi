@@ -5,16 +5,16 @@ import * as Icon2 from "react-icons/io5"
 const registrationDetails = [
     {
       icon: "HiChatBubbleLeftRight",
-      heading: "Chat on us",
-      description: "Our friendly team is here to help.",
-      details: "uicofficial@gmail.com",
+      heading: "Get In Touch",
+      // description: "Our friendly team is here to help.",
+      details: "info@utrechtitconsulting.com",
     },
     {
       icon: "BiWorld",
       heading: "Visit us",
-      description: "Come and say hello at our office UIC.",
+      // description: "Come and say hello at our office UIC.",
       details:
-        "Akshya Nagar 1st Block 1st Cross, Rammurthy nagar, Bangalore-560016",
+        "South Al Khuwair, Bousher, Muscat, Oman",
     },
     // {
     //   icon: "IoCall",

@@ -3,7 +3,8 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
 
 const Header = ({ logo }) => {
-  const navItems = ["HOME", "ABOUT", "INDUSTRY", "JOBS"];
+  // const navItems = ["HOME", "ABOUT", "INDUSTRY", "JOBS"];
+  const navItems = ["HOME", "ABOUT", "SPEAKERS", "PARTNERS"];
   const navigate = useNavigate();
 
   const handleRegisterClick = () => {

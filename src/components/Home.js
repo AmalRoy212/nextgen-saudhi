@@ -1,6 +1,6 @@
 import Header from "./Header";
 import HighlightText from "./HighlightText";
-import UIClogo from "../assets/images/UIC.png";
+import UIClogo from "../assets/images/UICLOGOIMAGE.png";
 import AboutSection from "./AboutSection";
 // import SpeakerSection from "./SpeakerSection";
 import IndustrySection from "./IndustrySection";
@@ -36,28 +36,41 @@ const Home = () => {
             <HighlightText text={" CONFERENCE (LCNC) 2024"} />
           </h1>
 
-          <div className="w-1/12 h-1 mt-1 bg-deepBlue mx-auto"></div>
+          <div className="w-1/2 h-1 mt-2 bg-white mx-auto"></div>
 
-          <div className="flex gap-4 items-center justify-center">
-            <h2 className="text-lg sm:text-xl md:text-4xl font-bold text-center text-[#cdd1d6]">
-              Hosted by
+          <div className="flex flex-col gap-4 items-center justify-center">
+            <h2 className="text-lg sm:text-xl md:text-4xl mb-2 font-bold text-center text-white">
+              Hosted By
             </h2>
             <a href="/" className="cursor-pointer">
               <img
                 src={UIClogo}
-                className="w-[100px] md:w-[130px]"
+                className="w-[140px] md:w-[200px]"
                 alt="UIC Logo"
               />
             </a>
           </div>
 
-          <p className="text-lg sm:text-xl md:text-2xl mt-2 text-center bg-gradient-to-b from-[#eef1f3] via-[#dee2e4] to-[#98b5a4] text-transparent bg-clip-text font-bold">
-            12 SEPTEMBER 2024, INTERCITYHOTEL MUSCAT
+      
+
+          <p className=" flex items-center justify-center gap-6 text-lg sm:text-xl md:text-2xl mt-2 text-center bg-gradient-to-b from-[#eef1f3] via-[#dee2e4] to-[#98b5a4] text-transparent bg-clip-text font-bold">
+            <div className="flex gap-2 justify-center items-center">
+              <i className="fa-regular fa-calendar"></i>
+              12 SEPTEMBER 2024
+            </div>
+            <div className="flex gap-2 justify-center items-center">
+              <i className="fa-solid fa-hotel" ></i>
+            INTERCITYHOTEL
+            </div>
+            <div className="flex gap-2 justify-center items-center">
+              <i className="fa-solid fa-location-dot"></i> 
+              MUSCAT, OMAN
+            </div>
           </p>
 
-          <p className="text-2xl sm:text-3xl md:text-4xl mt-2 text-center bg-gradient-to-b from-[#eef1f3] via-[#dee2e4] to-[#98b5a4] text-transparent bg-clip-text font-bold">
+          {/* <p className="text-2xl sm:text-3xl md:text-4xl mt-2 text-center bg-gradient-to-b from-[#eef1f3] via-[#dee2e4] to-[#98b5a4] text-transparent bg-clip-text font-bold">
             SOUTH AL KHUWAIR, BOUSHER, MUSCAT, OMAN
-          </p>
+          </p> */}
         </div>
       </section>
 
