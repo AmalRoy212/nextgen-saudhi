@@ -69,6 +69,14 @@ const Home = () => {
         <AboutSection />
       </section>
 
+        {/* About section */}
+        <section
+        className="relative mx-auto mt-20 flex w-11/12 max-w-maxContent flex-col items-center justify-between gap-8 bg-[#000814] text-white"
+        id="about"
+      >
+        <AboutSection />
+      </section>
+
       {/* Speaker section */}
       {/* <section
         className="relative mx-auto flex w-11/12 max-w-maxContent flex-col items-center justify-between gap-8 bg-[#000814] text-white"

@@ -12,7 +12,7 @@ const Header = ({ logo }) => {
 
   return (
     <header>
-      <div>hyy</div>
+     
       <nav className="max-w-[1200px] mx-auto flex items-center justify-between xl:px-0 px-7 relative z-10">
 
         {/* Logo */}
