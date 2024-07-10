@@ -1,18 +1,17 @@
-import Header from "./Header";
 import HighlightText from "./HighlightText";
 import UIClogo from "../assets/images/UICLOGOIMAGE.png";
 import AboutSection from "./AboutSection";
-// import SpeakerSection from "./SpeakerSection";
 import IndustrySection from "./IndustrySection";
 import JobsSectionTemp from "./JobsSectionTemp";
 import RegistrationFormSection from "./RegistrationFormSection";
 import Technologies from "./Technologies";
+import Header from "./Header";
 
 const Home = () => {
   return (
     <div className="bg-[#000814] flex flex-col min-h-screen w-screen">
       {/* Main Overview */}
-      <section className="relative bg-cover  bg-center xl:h-screen sm:h-screen md:h-screen items-center">
+      <section className="relative bg-cover bg-center xl:h-screen sm:h-screen md:h-screen items-center">
         {/* Video background */}
         <video
           autoPlay
@@ -28,7 +27,10 @@ const Home = () => {
         {/* Black gradient overlay */}
         <div className="absolute inset-0 bg-black bg-opacity-60"></div>
 
-        <Header logo={UIClogo} />
+        {/* Header positioned absolutely */}
+        <div className="relative z-10">
+          <Header />
+        </div>
 
         <div className="max-w-[950px] xl:py-0 py-11 xl:max-w-[850px] xl:px-0 px-7 flex flex-col gap-5 mx-auto items-center justify-between text-center relative z-10">
           <h1 className="text-xl sm:text-3xl md:text-5xl text-center xl:mt-16 md:mt-24 sm:mt-14 font-bold text-white">
@@ -51,36 +53,20 @@ const Home = () => {
             </a>
           </div>
 
-          {/* <p className=" flex items-center justify-center gap-6 text-lg sm:text-xl md:text-2xl mt-2 text-center bg-gradient-to-b from-[#eef1f3] via-[#dee2e4] to-[#98b5a4] text-transparent bg-clip-text font-bold">
-            <div className="flex gap-2 justify-center items-center">
-              <i className="fa-regular fa-calendar bg-gradient-to-b from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] text-transparent bg-clip-text"></i>
-              <HighlightText text={" 12 SEPTEMBER 2024"} /> 
-            </div>
-            <div className="flex gap-2 justify-center items-center">
-              <i className="fa-solid fa-hotel bg-gradient-to-b from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] text-transparent bg-clip-text"></i>
-              <HighlightText text={" INTERCITYHOTEL"} />   
-            </div>
-            <div className="flex gap-2 justify-center items-center">
-              <i className="fa-solid fa-location-dot bg-gradient-to-b from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] text-transparent bg-clip-text"></i> 
-              <HighlightText text={" MUSCAT, OMAN"} /> 
-            </div>
-          </p> */}
-
-          <p className=" flex items-center justify-center gap-6 text-lg sm:text-xl md:text-2xl mt-2 text-center text-white text-transparent bg-clip-text font-bold">
+          <p className="flex items-center justify-center gap-6 text-lg sm:text-xl md:text-2xl mt-2 text-center text-white text-transparent bg-clip-text font-bold">
             <div className="flex gap-2 justify-center items-center">
               <i className="fa-regular fa-calendar"></i>
               12 SEPTEMBER 2024
             </div>
             <div className="flex gap-2 justify-center items-center">
-              <i className="fa-solid fa-hotel" ></i>
-            INTERCITYHOTEL
+              <i className="fa-solid fa-hotel"></i>
+              INTERCITYHOTEL
             </div>
             <div className="flex gap-2 justify-center items-center">
-              <i className="fa-solid fa-location-dot"></i> 
+              <i className="fa-solid fa-location-dot"></i>
               MUSCAT, OMAN
             </div>
           </p>
-
         </div>
       </section>
 
@@ -92,17 +78,9 @@ const Home = () => {
         <AboutSection />
       </section>
 
-      {/* Speaker section */}
-      {/* <section
-        className="relative mx-auto flex w-11/12 max-w-maxContent flex-col items-center justify-between gap-8 bg-[#000814] text-white"
-        id="speakers"
-      >
-        <SpeakerSection />
-      </section> */}
-
       {/* Industry section */}
       <section
-        className="relative mx-auto mt-20 mb-10  flex w-full max-w-maxContent flex-col items-center justify-between gap-8 bg-white text-white"
+        className="relative mx-auto mt-20 mb-10 flex w-full max-w-maxContent flex-col items-center justify-between gap-8 bg-white text-white"
         id="industry"
       >
         <IndustrySection />
@@ -125,7 +103,7 @@ const Home = () => {
       </section>
 
       {/* Registration form */}
-      <section className=" bg-[#000814] items-center">
+      <section className="bg-[#000814] items-center">
         <RegistrationFormSection />
       </section>
     </div>

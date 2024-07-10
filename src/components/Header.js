@@ -1,8 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import UIClogo from "../assets/images/UICLOGOIMAGE.png";
 
-const Header = ({ logo }) => {
+const Header = () => {
   // const navItems = ["HOME", "ABOUT", "INDUSTRY", "JOBS"];
   const navItems = ["HOME", "ABOUT", "SPEAKERS", "PARTNERS"];
   const navigate = useNavigate();
@@ -17,9 +18,9 @@ const Header = ({ logo }) => {
       <nav className="max-w-[1200px] mx-auto flex items-center justify-between xl:px-0 px-7 relative z-10">
 
         {/* Logo */}
-        <a href="/" className="cursor-pointer py-7 pr-7">
-          <img src={logo} className="w-[100px] md:w-[130px]" alt="UIC Logo" />
-        </a>
+        <Link to="/event" className="cursor-pointer py-7 pr-7">
+          <img src={UIClogo} className="w-[100px] md:w-[130px]" alt="UIC Logo" />
+        </Link>
 
         {/* Navigation Links */}
         <ul className="hidden sm:flex gap-5 font-mullish text-white items-center">
