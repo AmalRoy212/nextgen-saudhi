@@ -30,7 +30,7 @@ const Header = () => {
               className="font-semibold py-7 hover:text-[#928f96] cursor-pointer transition-all duration-200 relative group"
             >
               <a href={`#${item.toLowerCase()}`}>{item}</a>
-              <div className="absolute bottom-5 w-full h-1 bg-deepBlue hidden group-hover:block transition-all duration-200"></div>
+              <div className="absolute bottom-5 w-full h-1 bg-[#928f96] hidden group-hover:block transition-all duration-200"></div>
             </li>
           ))}
           <button

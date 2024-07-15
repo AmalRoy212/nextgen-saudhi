@@ -1,20 +1,27 @@
-import {RouterProvider, createBrowserRouter } from "react-router-dom";
-// import Layout from "./Layout";
+import { RouterProvider, createBrowserRouter, Navigate } from "react-router-dom";
 import Home from "./Home";
+import Admin from "./Admin";
+import Dashboard from "./Dashboard";
 import RegistrationFormSection from "./RegistrationFormSection";
 import Header from "./Header";
 
+// Simulated authentication function
+const isAuthenticated = () => {
+  return localStorage.getItem("isAuthenticated") === "true";
+};
+
+const PrivateRoute = ({ element: Element }) => {
+  return isAuthenticated() ? <Element /> : <Navigate to="/event/admin" />;
+};
 
 const Body = () => {
   return (
-    // <RouterProvider router={appRouter} />
     <div className="bg-[#000814] flex flex-col min-h-screen w-screen">
-      <Header/>
-      <RegistrationFormSection/>
+      <Header />
+      <RegistrationFormSection />
     </div>
   );
 };
-
 
 const appRouter = createBrowserRouter([
   {
@@ -29,11 +36,18 @@ const appRouter = createBrowserRouter([
     path: "/event",
     element: <Home />,
   },
-
+  {
+    path: "/event/admin",
+    element: <Admin />,
+  },
+  {
+    path: "/event/admin/dashboard",
+    element: <PrivateRoute element={Dashboard} />,
+  },
 ]);
 
-function mainApp(){
-  return <RouterProvider router={appRouter} />
+function MainApp() {
+  return <RouterProvider router={appRouter} />;
 }
 
-export default mainApp;
+export default MainApp;

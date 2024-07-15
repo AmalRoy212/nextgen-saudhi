@@ -7,7 +7,9 @@ import RegistrationFormSection from "./RegistrationFormSection";
 import Technologies from "./Technologies";
 import Header from "./Header";
 
+
 const Home = () => {
+
   return (
     <div className="bg-[#000814] flex flex-col min-h-screen w-screen">
       {/* Main Overview */}
@@ -53,7 +55,7 @@ const Home = () => {
             </a>
           </div>
 
-          <p className="flex items-center justify-center gap-6 text-lg sm:text-xl md:text-2xl mt-2 text-center text-white text-transparent bg-clip-text font-bold">
+          <div className="flex items-center justify-center gap-6 text-lg sm:text-xl md:text-2xl mt-2 text-center text-white text-transparent bg-clip-text font-bold">
             <div className="flex gap-2 justify-center items-center">
               <i className="fa-regular fa-calendar"></i>
               12 SEPTEMBER 2024
@@ -66,7 +68,7 @@ const Home = () => {
               <i className="fa-solid fa-location-dot"></i>
               MUSCAT, OMAN
             </div>
-          </p>
+          </div>
         </div>
       </section>
 
@@ -106,6 +108,7 @@ const Home = () => {
       <section className="bg-[#000814] items-center">
         <RegistrationFormSection />
       </section>
+      
     </div>
   );
 };

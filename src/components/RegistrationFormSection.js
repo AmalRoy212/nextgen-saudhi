@@ -5,8 +5,11 @@ const RegistrationFormSection = () => {
   return (
     <div className="bg-[#000814] flex flex-col min-h-screen w-screen">
       <div className="mx-auto mt-14 mb-5 flex w-[1200px] max-w-maxContent flex-col justify-between gap-10 text-white lg:flex-row">
+
         <div className="lg:w-[40%]">
+
           <RegistrationDetails />
+
         </div>
 
         <div className="lg:w-[60%]">
@@ -18,8 +21,10 @@ const RegistrationFormSection = () => {
               We&apos;d love to here for you, Please fill out this form.
             </p>
             <div className="mt-7">
+
               <RegistrationForm />
             </div>
+            
           </div>
         </div>
       </div>

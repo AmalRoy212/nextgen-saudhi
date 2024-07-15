@@ -13,12 +13,13 @@ import HighlightText from "./HighlightText";
 const Technologies = () => {
   return (
     <div className="bg-white max-w-[1250px] py-14 px-8  mt-10 flex flex-col">
-      <div className="flex flex-col gap-7 justify-center items-center">
-        <h1 className="lg:w-[100%] text-black text-center uppercase text-5xl font-mullish font-bold">
+      <div className="flex flex-col gap-4 justify-center items-center">
+        <h1 className="lg:w-[100%] text-black text-center uppercase text-4xl font-mullish font-bold">
+        
           Our Technology
           <HighlightText text=" Partners" />
         </h1>
-
+        <div className="w-1/3 h-1 mt-1 bg-black mx-auto"></div>
         {/* <p className="text-lg font-semibold text-gray-600 mt-7">
           Nurturing Innovation and Growth Through Trusted Alliances and
           Strategic Collaborations

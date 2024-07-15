@@ -42,16 +42,18 @@ const industries = [
 const IndustrySection = () => {
   return (
     <div className="bg-white max-w-[1150px] py-14 px-8 flex flex-col">
-      <div className="flex flex-col gap-6 justify-center">
-        <h1 className="lg:w-[100%] text-black text-center text-5xl font-mullish font-bold">
+      <div className="flex flex-col gap-4 justify-center">
+        <h1 className="lg:w-[100%] text-black text-center text-4xl font-mullish font-bold">
+   
           WHO SHOULD <HighlightText text=" ATTEND ?" />
         </h1>
-        <div className="w-1/2 h-1 mt-1 bg-black mx-auto"></div>
+        <div className="w-1/3 h-1 mt-1 bg-black mx-auto"></div>
       </div>
 
       <div className="flex gap-5 pt-12 items-center">
-        <div className="h-16 w-1 bg-deepBlue mx-auto"></div>
-        <h1 className="w-full text-deepBlue font-mullish text-5xl font-semibold">
+        <div className="h-12 w-1 bg-deepBlue mx-auto"></div>
+        <h1 className="w-full text-deepBlue font-mullish text-4xl font-semibold">
+          
           BY INDUSTRY
         </h1>
       </div>
