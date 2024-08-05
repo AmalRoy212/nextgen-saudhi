@@ -31,8 +31,14 @@ const RegistrationForm = () => {
   }, [reset, isSubmitSuccessful]);
 
   const submitRegistrationForm = async (data) => {
+    // Ensure no null values are sent
+    const cleanedData = {};
+    for (const key in data) {
+      cleanedData[key] = data[key] || '';
+    }
+
     try {
-      const response = await axios.post('https://utrechtitconsulting.com/api/r.php', data, {
+      const response = await axios.post('https://utrechtitconsulting.com/api/r.php', cleanedData, {
         headers: {
           'Content-Type': 'application/json',
         },
@@ -60,7 +66,6 @@ const RegistrationForm = () => {
 
   return (
     <form className="flex flex-col gap-7" onSubmit={handleSubmit(submitRegistrationForm)}>
-
       <div className="flex flex-col gap-5 lg:flex-row">
         <div className="flex flex-col gap-2 lg:w-[48%]">
           <label htmlFor="first_name" className="label-style">
@@ -197,7 +202,6 @@ const RegistrationForm = () => {
         </div>
       </div>
 
-
       <div className="flex flex-col gap-2">
         <label htmlFor="technologies" className="label-style">
           Select the technologies you are interested in
@@ -244,7 +248,7 @@ const RegistrationForm = () => {
         type="submit"
         className="rounded-md bg-yellow-400 px-6 py-3 text-center text-[13px] font-bold text-black shadow-[2px_2px_0px_0px_rgba(255,255,255,0.18)] sm:text-[16px]"
       >
-        Send Message
+        REGISTER FORM
       </button>
     </form>
   );
