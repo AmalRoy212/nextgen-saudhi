@@ -8,7 +8,7 @@ const Admin = () => {
 
   // Hardcoded username and password
   const hardcodedUsername = "Arzaid";
-  const hardcodedPassword = "123456";
+  const hardcodedPassword = "Arzaid@me21100100";
 
   const handleSubmit = (event) => {
     event.preventDefault();

@@ -2,6 +2,9 @@ import React, { useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
 
+// List of public email domains
+const publicDomains = ["gmail.com", "yahoo.com", "outlook.com", "hotmail.com", "aol.com", "icloud.com"];
+
 const RegistrationForm = () => {
   const {
     register,
@@ -29,7 +32,7 @@ const RegistrationForm = () => {
 
   const submitRegistrationForm = async (data) => {
     try {
-      const response = await axios.post('/api1', data, {
+      const response = await axios.post('https://utrechtitconsulting.com/api/r.php', data, {
         headers: {
           'Content-Type': 'application/json',
         },
@@ -46,8 +49,15 @@ const RegistrationForm = () => {
     }
   };
 
+  // Custom email validation function
+  const validateEmail = (email) => {
+    const domain = email.split('@')[1];
+    if (publicDomains.includes(domain)) {
+      return "Public email domains are not allowed.";
+    }
+    return true;
+  };
 
-  
   return (
     <form className="flex flex-col gap-7" onSubmit={handleSubmit(submitRegistrationForm)}>
 
@@ -82,82 +92,111 @@ const RegistrationForm = () => {
         </div>
       </div>
 
-       <div className="flex flex-col gap-2">
-        <label htmlFor="company" className="label-style">
-          Company Name
-        </label>
-        <input
-          type="text"
-          id="company"
-          placeholder="Enter Company Name"
-          className="form-style"
-          {...register('company', { required: true })}
-        />
-        {errors.company && (
-          <span className="-mt-1 text-[12px] text-yellow-400">Please enter your company name.</span>
-        )}
+      <div className="flex flex-col gap-5 lg:flex-row">
+        <div className="flex flex-col gap-2 lg:w-[48%]">
+          <label htmlFor="company" className="label-style">
+            Company Name
+          </label>
+          <input
+            type="text"
+            id="company"
+            placeholder="Enter Company Name"
+            className="form-style"
+            {...register('company', { required: true })}
+          />
+          {errors.company && (
+            <span className="-mt-1 text-[12px] text-yellow-400">Please enter your company name.</span>
+          )}
+        </div>
+
+        <div className="flex flex-col gap-2 lg:w-[48%]">
+          <label htmlFor="designation" className="label-style">
+            Designation
+          </label>
+          <input
+            type="text"
+            id="designation"
+            placeholder="Enter Designation"
+            className="form-style"
+            {...register('designation', { required: true })}
+          />
+          {errors.designation && (
+            <span className="-mt-1 text-[12px] text-yellow-400">Please enter your designation.</span>
+          )}
+        </div>
       </div>
 
-      <div className="flex flex-col gap-2">
-        <label htmlFor="designation" className="label-style">
-          Designation
-        </label>
-        <input
-          type="text"
-          id="designation"
-          placeholder="Enter Designation"
-          className="form-style"
-          {...register('designation', { required: true })}
-        />
-        {errors.designation && (
-          <span className="-mt-1 text-[12px] text-yellow-400">Please enter your designation.</span>
-        )}
+      <div className="flex flex-col gap-5 lg:flex-row">
+        <div className="flex flex-col gap-2 lg:w-[48%]">
+          <label htmlFor="contactNumber" className="label-style">
+            Contact Number
+          </label>
+          <input
+            type="text"
+            id="contactNumber"
+            className="form-style"
+            placeholder="Enter Contact Number"
+            {...register('contactNumber', { required: true })}
+          />
+          {errors.contactNumber && (
+            <span className="-mt-1 text-[12px] text-yellow-400">Please enter your contact number.</span>
+          )}
+        </div>
+
+        <div className="flex flex-col gap-2 lg:w-[48%]">
+          <label htmlFor="telephone" className="label-style">
+            Telephone
+          </label>
+          <input
+            type="text"
+            id="telephone"
+            placeholder="Enter Telephone Number"
+            {...register('telephone', { required: true })}
+            className="form-style"
+          />
+        </div>
       </div>
 
-      <div className="flex flex-col gap-2">
-        <label htmlFor="email" className="label-style">
-          Email Address
-        </label>
-        <input
-          type="email"
-          id="email"
-          placeholder="Enter Email Address"
-          className="form-style"
-          {...register('email', { required: true })}
-        />
-        {errors.email && (
-          <span className="-mt-1 text-[12px] text-yellow-400">Please enter your email address.</span>
-        )}
+      <div className="flex flex-col gap-5 lg:flex-row">
+        <div className="flex flex-col gap-2 lg:w-[48%]">
+          <label htmlFor="email" className="label-style">
+            Email Address
+          </label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter Email Address"
+            className="form-style"
+            {...register('email', { 
+              required: true, 
+              validate: validateEmail 
+            })}
+          />
+          {errors.email && (
+            <span className="-mt-1 text-[12px] text-yellow-400">{errors.email.message || "Please enter your email address."}</span>
+          )}
+        </div>
+
+        <div className="flex flex-col gap-2 lg:w-[48%]">
+          <label htmlFor="event" className="label-style">
+            I am interested in
+          </label>
+          <select
+            id="event"
+            {...register('event', { required: true })}
+            className="form-style"
+          >
+            <option value="">Select</option>
+            <option value="Attend as a Delegate">Attend as a Delegate</option>
+            <option value="Attend as a Speaker">Attend as a Speaker</option>
+            <option value="Attend as a Partner">Attend as a Partner</option>
+          </select>
+          {errors.event && (
+            <span className="-mt-1 text-[12px] text-yellow-400">Please select an event.</span>
+          )}
+        </div>
       </div>
 
-      <div className="flex flex-col gap-2">
-        <label htmlFor="contactNumber" className="label-style">
-          Contact Number
-        </label>
-        <input
-          type="text"
-          id="contactNumber"
-          className="form-style"
-          placeholder="Enter Contact Number"
-          {...register('contactNumber', { required: true })}
-        />
-        {errors.contactNumber && (
-          <span className="-mt-1 text-[12px] text-yellow-400">Please enter your contact number.</span>
-        )}
-      </div>
-
-      <div className="flex flex-col gap-2">
-        <label htmlFor="telephone" className="label-style">
-          Telephone
-        </label>
-        <input
-          type="text"
-          id="telephone"
-          placeholder="Enter Telephone Number"
-          {...register('telephone', { required: true })}
-          className="form-style"
-        />
-      </div>
 
       <div className="flex flex-col gap-2">
         <label htmlFor="technologies" className="label-style">
@@ -171,7 +210,7 @@ const RegistrationForm = () => {
           <option value="">Select</option>
           <option value="Data Engineering">Data Engineering</option>
           <option value="Hyper Automation - AI/ML">Hyper Automation - AI/ML</option>
-          <option value="IPaaS">IPaaS</option>
+          <option value="iPaaS">iPaaS</option>
           <option value="Digital Integration">Digital Integration</option>
           <option value="DPA/BPA/BPM">DPA/BPA/BPM</option>
           <option value="RPA">RPA</option>
@@ -183,25 +222,6 @@ const RegistrationForm = () => {
         </select>
         {errors.technologies && (
           <span className="-mt-1 text-[12px] text-yellow-400">Please select a technology.</span>
-        )}
-      </div>
-
-      <div className="flex flex-col gap-2">
-        <label htmlFor="event" className="label-style">
-          I am interested in
-        </label>
-        <select
-          id="event"
-          {...register('event', { required: true })}
-          className="form-style"
-        >
-          <option value="">Select</option>
-          <option value="Attend as a Delegate">Attend as a Delegate</option>
-          <option value="Attend as a Speaker">Attend as a Speaker</option>
-          <option value="Attend as a Partner">Attend as a Partner</option>
-        </select>
-        {errors.event && (
-          <span className="-mt-1 text-[12px] text-yellow-400">Please select an event.</span>
         )}
       </div>
 
@@ -218,7 +238,7 @@ const RegistrationForm = () => {
         {errors.consent && (
           <span className="-mt-1 text-[12px] text-yellow-400">Please provide your consent.</span>
         )}
-      </div> 
+      </div>
 
       <button
         type="submit"

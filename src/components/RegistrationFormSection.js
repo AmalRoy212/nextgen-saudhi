@@ -6,18 +6,20 @@ const RegistrationFormSection = () => {
     <div className="bg-[#000814] flex flex-col min-h-screen w-screen">
       <div className="mx-auto mt-14 mb-5 flex w-[1200px] max-w-maxContent flex-col justify-between gap-10 text-white lg:flex-row">
 
-        <div className="lg:w-[40%]">
+        <div className="lg:w-[30%]">
 
-          <RegistrationDetails />
+<RegistrationDetails />
+
+
 
         </div>
 
-        <div className="lg:w-[60%]">
+        <div className="lg:w-[70%]">
           <div className="border border-richblack-600 text-richblack-300 rounded-xl p-7 lg:p-14 flex gap-3 flex-col">
-            <h1 className="text-4xl leading-10 font-semibold text-richblack-5">
+            <h1 className="text-4xl leading-10 font-semibold text-richblack-5 flex items-center justify-center">
               Registration Form
             </h1>
-            <p className="">
+            <p className="flex items-center justify-center">
               We&apos;d love to here for you, Please fill out this form.
             </p>
             <div className="mt-7">

@@ -7,7 +7,7 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('/api2', {
+        const response = await axios.get('https://utrechtitconsulting.com/api/getData.php', {
           headers: {
             'Content-Type': 'application/json',
           },
@@ -42,7 +42,7 @@ const Dashboard = () => {
               <th className="py-2 px-4 border-b-2 border-gray-300">Telephone</th>
               <th className="py-2 px-4 border-b-2 border-gray-300">Technologies</th>
               <th className="py-2 px-4 border-b-2 border-gray-300">Event</th>
-              <th className="py-2 px-4 border-b-2 border-gray-300">Consent</th>
+              {/* <th className="py-2 px-4 border-b-2 border-gray-300">Consent</th> */}
             </tr>
           </thead>
           <tbody className="text-gray-600">
@@ -50,14 +50,14 @@ const Dashboard = () => {
               <tr key={index}>
                 <td className="py-2 px-4 border-b">{registration.first_name}</td>
                 <td className="py-2 px-4 border-b">{registration.last_name}</td>
-                <td className="py-2 px-4 border-b">{registration.company}</td>
+                <td className="py-2 px-4 border-b">{registration.company_name}</td>
                 <td className="py-2 px-4 border-b">{registration.designation}</td>
                 <td className="py-2 px-4 border-b">{registration.email}</td>
-                <td className="py-2 px-4 border-b">{registration.contactNumber}</td>
+                <td className="py-2 px-4 border-b">{registration.contact_number}</td>
                 <td className="py-2 px-4 border-b">{registration.telephone}</td>
                 <td className="py-2 px-4 border-b">{registration.technologies}</td>
                 <td className="py-2 px-4 border-b">{registration.event}</td>
-                <td className="py-2 px-4 border-b">{registration.consent ? 'Yes' : 'No'}</td>
+                {/* <td className="py-2 px-4 border-b">{registration.consent ? 'Yes' : 'No'}</td> */}
               </tr>
             ))}
           </tbody>
