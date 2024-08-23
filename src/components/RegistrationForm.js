@@ -31,6 +31,7 @@ const RegistrationForm = () => {
   }, [reset, isSubmitSuccessful]);
 
   const submitRegistrationForm = async (data) => {
+    
     // Ensure no null values are sent
     const cleanedData = {};
     for (const key in data) {
@@ -92,8 +93,11 @@ const RegistrationForm = () => {
             id="last_name"
             className="form-style"
             placeholder="Enter Last Name"
-            {...register('last_name')}
+            {...register('last_name', { required: true })}
           />
+          {errors.last_name && (
+            <span className="-mt-1 text-[12px] text-yellow-400">Please enter your last name.</span>
+          )}
         </div>
       </div>
 
@@ -141,10 +145,18 @@ const RegistrationForm = () => {
             id="contactNumber"
             className="form-style"
             placeholder="Enter Contact Number"
-            {...register('contactNumber', { required: true })}
+            {...register('contactNumber', {
+              required: true,
+              pattern: {
+                value: /^[0-9]+$/,
+                message: "Only numbers are allowed."
+              }
+            })}
           />
           {errors.contactNumber && (
-            <span className="-mt-1 text-[12px] text-yellow-400">Please enter your contact number.</span>
+            <span className="-mt-1 text-[12px] text-yellow-400">
+              {errors.contactNumber.message || "Please enter your contact number."}
+            </span>
           )}
         </div>
 
@@ -156,9 +168,20 @@ const RegistrationForm = () => {
             type="text"
             id="telephone"
             placeholder="Enter Telephone Number"
-            {...register('telephone', { required: true })}
+            {...register('telephone', {
+              required: true,
+              pattern: {
+                value: /^[0-9]+$/,
+                message: "Only numbers are allowed."
+              }
+            })}
             className="form-style"
           />
+          {errors.telephone && (
+            <span className="-mt-1 text-[12px] text-yellow-400">
+              {errors.telephone.message || "Please enter your telephone number."}
+            </span>
+          )}
         </div>
       </div>
 
@@ -212,17 +235,10 @@ const RegistrationForm = () => {
           className="form-style"
         >
           <option value="">Select</option>
-          <option value="Data Engineering">Data Engineering</option>
-          <option value="Hyper Automation - AI/ML">Hyper Automation - AI/ML</option>
-          <option value="iPaaS">iPaaS</option>
           <option value="Digital Integration">Digital Integration</option>
-          <option value="DPA/BPA/BPM">DPA/BPA/BPM</option>
-          <option value="RPA">RPA</option>
-          <option value="CRM">CRM</option>
-          <option value="ERP">ERP</option>
-          <option value="Cloud">Cloud</option>
+          <option value="BPM/DPA/BPA">BPM/DPA/BPA</option>
+          <option value="Data Engineering">Data Engineering</option>
           <option value="IT Consulting">IT Consulting</option>
-          <option value="Open Source Technologies">Open Source Technologies</option>
         </select>
         {errors.technologies && (
           <span className="-mt-1 text-[12px] text-yellow-400">Please select a technology.</span>
@@ -237,18 +253,18 @@ const RegistrationForm = () => {
             {...register('consent', { required: true })}
             className="mr-2"
           />
-          Consent to send updates via WhatsApp/LinkedIn/email
+          I consent to the terms and conditions.
         </label>
         {errors.consent && (
-          <span className="-mt-1 text-[12px] text-yellow-400">Please provide your consent.</span>
+          <span className="-mt-1 text-[12px] text-yellow-400">You must consent to the terms and conditions.</span>
         )}
       </div>
 
       <button
         type="submit"
-        className="rounded-md bg-yellow-400 px-6 py-3 text-center text-[13px] font-bold text-black shadow-[2px_2px_0px_0px_rgba(255,255,255,0.18)] sm:text-[16px]"
+        className="rounded-md bg-yellow-400 px-6 py-3 text-center text-[13px] font-medium uppercase tracking-wide text-black transition hover:bg-yellow-300"
       >
-        REGISTER FORM
+        Submit
       </button>
     </form>
   );
