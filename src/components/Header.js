@@ -29,13 +29,13 @@ const Header = () => {
               key={index}
               className="font-semibold py-7 hover:text-[#928f96] cursor-pointer transition-all duration-200 relative group"
             >
-              <a href={`#${item.toLowerCase()}`}>{item}</a>
+              <a className="text-sm font-mullish font-thin" href={`#${item.toLowerCase()}`}>{item}</a>
               <div className="absolute bottom-5 w-full h-1 bg-[#928f96] hidden group-hover:block transition-all duration-200"></div>
             </li>
           ))}
           <button
             onClick={handleRegisterClick}
-            className="py-2 px-4 bg-blue-500 text-white font-semibold rounded hover:bg-blue-700 transition-all duration-200"
+            className="py-2 px-4 bg-blue-500 text-white font-thin rounded hover:bg-blue-700 transition-all duration-200"
           >
             REGISTER
           </button>

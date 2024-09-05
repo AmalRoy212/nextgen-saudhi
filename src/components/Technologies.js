@@ -1,13 +1,13 @@
 import React from "react";
 import workatoLogo from "../assets/images/workato UIC.svg";
-import makeLogo from "../assets/images/makeUIC.svg";
+// import makeLogo from "../assets/images/makeUIC.svg";
 import solaceLogo from "../assets/images/solaceUIC.svg";
-import denodoLogo from "../assets/images/denodoUIC.svg";
+// import denodoLogo from "../assets/images/denodoUIC.svg";
 import kissflowLogo from "../assets/images/kissflowUIC.svg";
 // import dbtLogo from "../assets/images/dbtUIC.svg";
 // import exalateLogo from "../assets/images/exalateUIC.svg";
 import cleverflowLogo from "../assets/images/CleverflowLogoImageUIC.avif";
-import odooLogo from "../assets/images/OdooUIC.svg";
+// import odooLogo from "../assets/images/OdooUIC.svg";
 import HighlightText from "./HighlightText";
 
 const Technologies = () => {
