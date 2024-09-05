@@ -7,6 +7,7 @@ import kissflowLogo from "../assets/images/kissflowUIC.svg";
 // import dbtLogo from "../assets/images/dbtUIC.svg";
 // import exalateLogo from "../assets/images/exalateUIC.svg";
 import cleverflowLogo from "../assets/images/CleverflowLogoImageUIC.avif";
+import logo11 from "../assets/images/logo21.jpeg";
 // import odooLogo from "../assets/images/OdooUIC.svg";
 import HighlightText from "./HighlightText";
 
@@ -33,7 +34,7 @@ const Technologies = () => {
         {/* <img src={denodoLogo} alt="Denodo" className="h-16 w-auto mb-5" /> */}
         <img src={kissflowLogo} alt="KissFlow" className="h-80 w-auto mr-26 mr-8" />
         {/* <img src={dbtLogo} alt="dbt" className="h-10 w-auto" /> */}
-        {/* <img src={exalateLogo} alt="exalate" className="h-12 w-auto" /> */}
+        <img src={logo11} alt="exalate" className="h-12 w-auto" />
         <div className="flex gap-2 justify-end items-end text-black ml-20 ">
           <img src={cleverflowLogo} alt="cleverflow" className="h-16 w-auto" />
           <p className="text-2xl sm:text-2xl md:text-5xl mb-2  font-bold font-sans  text-center text-black">
