@@ -33,7 +33,7 @@ const appRouter = createBrowserRouter([
     element: <Body />,
   },
   {
-    path: "/event",
+    path: "/nextgen-event",
     element: <Home />,
   },
   {

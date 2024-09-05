@@ -24,6 +24,8 @@ const RegistrationForm = () => {
         contactNumber: '',
         telephone: '',
         technologies: '',
+        budget: '',
+        comments: '',
         event: '',
         consent: false,
       });
@@ -39,7 +41,7 @@ const RegistrationForm = () => {
     }
 
     try {
-      const response = await axios.post('https://utrechtitconsulting.com/api/r.php', cleanedData, {
+      const response = await axios.post('https://utrechtitconsulting.com/api/nextgen-registrations.php', cleanedData, {
         headers: {
           'Content-Type': 'application/json',
         },
@@ -236,8 +238,7 @@ const RegistrationForm = () => {
         >
           <option value="">Select</option>
           <option value="Digital Integration">Digital Integration</option>
-          <option value="BPM/DPA/BPA">BPM/DPA/BPA</option>
-          <option value="Data Engineering">Data Engineering</option>
+          <option value="BPM/DPA/BPA">Business Process Automation</option>
           <option value="IT Consulting">IT Consulting</option>
         </select>
         {errors.technologies && (
@@ -246,14 +247,52 @@ const RegistrationForm = () => {
       </div>
 
       <div className="flex flex-col gap-2">
-        <label htmlFor="consent" className="label-style flex items-center">
+        <label htmlFor="budget" className="label-style">
+          What is the budget allocated for the implementation of these technological advancements?
+        </label>
+        <select
+          id="budget"
+          {...register('budget', { required: true })}
+          className="form-style"
+        >
+          <option value="">Select</option>
+          <option value="$10,000 - $50,000">$10,000 - $50,000</option>
+          <option value="$50,000 - $1,00,000">$50,000 - $1,00,000</option>
+          <option value="$1,00,000 - $2,00,000">$1,00,000 - $2,00,000</option>
+          <option value="$2,00,000 - $3,00,000">$2,00,000 - $3,00,000</option>
+          <option value="$3,00,000 - $4,00,000">$3,00,000 - $4,00,000</option>
+          <option value="$4,00,000 - $5,00,000">$4,00,000 - $5,00,000</option>
+          <option value="$5,00,000 - $6,00,000">$5,00,000 - $6,00,000</option>
+          <option value="$6,00,000 - $7,00,000">$6,00,000 - $7,00,000</option>
+          <option value="$7,00,000 - $8,00,000">$7,00,000 - $8,00,000</option>
+          <option value="$8,00,000 - $9,00,000">$8,00,000 - $9,00,000</option>
+          <option value="$9,00,000 - $1,000,000">$9,00,000 - $1,000,000</option>
+          <option value="$1,000,000 and above">$1,000,000 and above</option>
+        </select>
+        {errors.budget && (
+          <span className="-mt-1 text-[12px] text-yellow-400">Please select a budget.</span>
+        )}
+      </div>
+
+      <div className="flex flex-col gap-2">
+        <label htmlFor="comments" className="label-style">
+          Please add your comments here if you would like to discuss any specific topics or explore any use cases in detail.
+        </label>
+        <textarea className="form-style"
+          {...register('comments', { required: false })}
+          id="comments" rows="4" cols="50" placeholder='Comments'>
+        </textarea>
+      </div>
+
+      <div className="flex flex-col gap-2">
+        <label htmlFor="consent" className="label-style flex items-start">
           <input
             type="checkbox"
             id="consent"
             {...register('consent', { required: true })}
-            className="mr-2"
+            className="mr-2 mt-2"
           />
-          I consent to the terms and conditions.
+          By completing this form, I hereby officially confirm my participation in the event and consent to receiving updates from UIC on the latest technology services for potential collaboration via email/WhatsApp.
         </label>
         {errors.consent && (
           <span className="-mt-1 text-[12px] text-yellow-400">You must consent to the terms and conditions.</span>

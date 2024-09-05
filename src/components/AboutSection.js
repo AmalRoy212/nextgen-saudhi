@@ -19,31 +19,7 @@ const AboutSection = () => {
           </h1>
 
           <p className="font-medium text-[16px] text-justify w-[100%] text-[#838894]">
-            UIC Low Code No Code(LCNC) and Data Conference 2024 is a landmark
-            event bringing together chief data analytics officers, chief
-            technology officers, and leaders in data, analytics and low code/no code
-            development. This conference is designed for those striving to
-            revolutionize their organizations through the power of data
-            analytics, AI, and innovative software development approaches. In
-            today's dynamic landscape, D&A leaders and CTOs navigate the
-            complexities of data-driven and AI-powered enterprises to deliver
-            substantial business value. By fostering synergies between
-            artificial and human intelligence, and leveraging low code and no
-            code platforms, leaders can steer their organizations towards
-            strategic success. This conference addresses these challenges
-            head-on, equipping attendees with the tools to scale initiatives
-            using best practices in data management, architecture, governance,
-            and software development. At the UIC Low Code No Code(LCNC) and Data
-            Conference 2024, participants will gain insights into maximizing
-            business impact within budget constraints, aligning data and
-            analytics strategies, embracing AI adoption, and optimizing
-            development workflows. The event fosters collaboration between IT
-            and business units, ensuring compliance and security in application
-            development. Join us to explore the latest trends, best practices,
-            and success stories. Celebrate the achievements of organizations and
-            individuals pushing the boundaries of innovation in the digital age,
-            and gain strategic insights to drive meaningful change and
-            organizational success.
+            The UIC NextGen Automation Conference is a premier event tailored for technology leaders from enterprise companies and government bodies. This event is dedicated to exploring the latest advancements in automation and integration technologies. Industry leaders and tech innovators will come together to discuss and showcase cutting-edge solutions that are streamlining processes, enhancing efficiency, and transforming operations across both the private and public sectors. Attendees will gain valuable insights into the most impactful automation and integration tools, making it an essential gathering for those looking to drive innovation and stay ahead in the rapidly evolving tech landscape.
           </p>
         </div>
       </div>

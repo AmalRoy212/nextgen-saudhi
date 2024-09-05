@@ -6,6 +6,7 @@ import JobsSectionTemp from "./JobsSectionTemp";
 import RegistrationFormSection from "./RegistrationFormSection";
 import Technologies from "./Technologies";
 import Header from "./Header";
+import KeyTopics from "./KeyTopics";
 
 
 const Home = () => {
@@ -22,7 +23,7 @@ const Home = () => {
           className="absolute inset-0 w-full h-full object-cover"
         >
           <source
-            src="https://videos.pexels.com/video-files/3129576/3129576-uhd_2560_1440_30fps.mp4"
+            src="https://cdn.pixabay.com/video/2023/07/19/172170-846731303_large.mp4"
             type="video/mp4"
           />
         </video>
@@ -36,8 +37,8 @@ const Home = () => {
 
         <div className="max-w-[950px] xl:py-0 py-11 xl:max-w-[850px] xl:px-0 px-7 flex flex-col gap-5 mx-auto items-center justify-between text-center relative z-10">
           <h1 className="text-xl sm:text-3xl md:text-5xl text-center xl:mt-16 md:mt-24 sm:mt-14 font-bold text-white">
-            UIC LOW CODE NO CODE (LCNC) AND
-            <HighlightText text={" DATA CONFERENCE 2024"} />
+            NextGen 
+            <HighlightText text={" Automation Conference 2024"} />
           </h1>
 
           <div className="w-1/2 h-1 mt-2 bg-white mx-auto"></div>
@@ -58,16 +59,16 @@ const Home = () => {
           <div className="flex items-center justify-center gap-6 text-lg sm:text-xl md:text-2xl mt-2 text-center text-white text-transparent bg-clip-text font-bold">
             <div className="flex gap-2 justify-center items-center">
               <i className="fa-regular fa-calendar"></i>
-              12 SEPTEMBER 2024
+              24 OCTOBER
             </div>
             <div className="flex gap-2 justify-center items-center">
               <i className="fa-solid fa-hotel"></i>
-              INTERCITYHOTEL
+              DUBAI, UAE
             </div>
-            <div className="flex gap-2 justify-center items-center">
+            {/* <div className="flex gap-2 justify-center items-center">
               <i className="fa-solid fa-location-dot"></i>
               MUSCAT, OMAN
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -80,9 +81,17 @@ const Home = () => {
         <AboutSection />
       </section>
 
+      {/* Key topics */}
+      <section
+        className="relative mx-auto mt-20 flex w-full max-w-maxContent flex-col items-center justify-between gap-8 bg-white text-white"
+        id="industry"
+      >
+        <KeyTopics/>
+      </section>
+
       {/* Industry section */}
       <section
-        className="relative mx-auto mt-20 mb-10 flex w-full max-w-maxContent flex-col items-center justify-between gap-8 bg-white text-white"
+        className="relative mx-auto mt-20 flex w-full max-w-maxContent flex-col items-center justify-between gap-8 bg-white text-white"
         id="industry"
       >
         <IndustrySection />
@@ -90,15 +99,18 @@ const Home = () => {
 
       {/* Job section */}
       <section
-        className="relative mx-auto mt-10 flex w-11/12 max-w-maxContent flex-col items-center justify-between gap-8 bg-[#000814] text-white"
+        className="relative bg-white mx-auto flex w-full py-10 max-w-maxContent flex-col items-center justify-between gap-8 text-white"
         id="jobs"
+        // style={{
+        //   backgroundImage: "url('https://cdn.pixabay.com/photo/2016/10/11/21/43/geometric-1732847_1280.jpg')",
+        // }}
       >
         <JobsSectionTemp />
       </section>
 
       {/* Technologies */}
       <section
-        className="relative mx-auto mt-20 mb-10 flex w-full max-w-maxContent flex-col items-center justify-between gap-8 bg-white text-white"
+        className="relative mx-auto mb-10 flex w-full max-w-maxContent flex-col items-center justify-between gap-8 bg-white text-white"
         id="jobs"
       >
         <Technologies />
