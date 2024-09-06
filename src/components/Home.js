@@ -75,7 +75,7 @@ const Home = () => {
 
       {/* About section */}
       <section
-        className="relative mx-auto mt-20 flex w-11/12 max-w-maxContent flex-col items-center justify-between gap-8 bg-[#000814] text-white"
+        className="relative w-full p-20 flex max-w-maxContent flex-col items-center justify-between gap-8 bg-white text-black"
         id="about"
       >
         <AboutSection />
@@ -83,7 +83,7 @@ const Home = () => {
 
       {/* Key topics */}
       <section
-        className="relative mx-auto mt-20 flex w-full max-w-maxContent flex-col items-center justify-between gap-8 bg-white text-white"
+        className="relative mx-auto pt-20 flex w-full max-w-maxContent flex-col items-center justify-between gap-8 bg-white text-white"
         id="industry"
       >
         <KeyTopics/>
@@ -91,7 +91,7 @@ const Home = () => {
 
       {/* Industry section */}
       <section
-        className="relative mx-auto mt-20 flex w-full max-w-maxContent flex-col items-center justify-between gap-8 bg-white text-white"
+        className="relative mx-auto pt-20 flex w-full max-w-maxContent flex-col items-center justify-between gap-8 bg-white text-white"
         id="industry"
       >
         <IndustrySection />
