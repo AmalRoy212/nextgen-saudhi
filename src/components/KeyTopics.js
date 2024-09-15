@@ -1,5 +1,7 @@
 import React from 'react'
 import HighlightText from './HighlightText';
+import image from "../assets/images/image222222.jpg";
+
 
 const KeyTopics = () => {
   return (
@@ -13,7 +15,7 @@ const KeyTopics = () => {
 
       <div className='w-full flex gap-x-10 gap-y-10 flex-col md:flex-row'>
         <div className='md:w-1/2 flex flex-col gap-y-10 bg-slate-100 rounded-xl shadow-2xl'>
-          <img className='rounded-xl w-full h-[300px] object-cover shadow-2xl' src='https://www.costain.com/media/598774/gettyimages-957654566_web.jpg?anchor=center&mode=crop&width=1120&heightratio=0.4734375&format=jpg&slimmage=true&quality=80&rnd=13209730562000000' alt='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnnZ-M6_2xgUWKt5mM5KS-y5rkuFv0Rle8Iw&s'/>
+          <img className='rounded-xl w-full h-[300px] object-cover shadow-2xl' src={image} alt='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnnZ-M6_2xgUWKt5mM5KS-y5rkuFv0Rle8Iw&s'/>
           <h1 className='w-full flex justify-center items-center text-2xl'><HighlightText text="  Digital Integration" /></h1>
           <p className='p-5 mt-[-3rem] text-black mb-10'>
             Explore the technologies that are bridging the gap between legacy systems and modern digital solutions.
