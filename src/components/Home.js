@@ -38,7 +38,7 @@ const Home = () => {
         <div className="max-w-[950px] mt-[-3rem] xl:py-0 py-11 xl:max-w-[850px] xl:px-0 px-7 flex flex-col gap-5 mx-auto items-center justify-between text-center relative z-10">
           <h1 className="text-xl sm:text-3xl md:text-5xl text-center xl:mt-16 md:mt-24 sm:mt-14 font-bold text-white">
             NextGen 
-            <HighlightText text={" Automation Conference & Data 2024"} />
+            <HighlightText text={" Automation & Data Conference 2024"} />
           </h1>
 
           <div className="w-1/2 h-1 mt-2 bg-white mx-auto"></div>
@@ -59,11 +59,11 @@ const Home = () => {
           <div className="flex items-center justify-center gap-6 text-lg sm:text-xl md:text-2xl mt-2 text-center text-white text-transparent bg-clip-text font-bold">
             <div className="flex gap-2 justify-center items-center">
               <i className="fa-regular fa-calendar"></i>
-              24 OCTOBER
+              24 October
             </div>
             <div className="flex gap-2 justify-center items-center">
               <i className="fa-solid fa-hotel"></i>
-              DUBAI, UAE
+              DoubleTree by Hilton , Dubai Al Jadaf , UAE
             </div>
             {/* <div className="flex gap-2 justify-center items-center">
               <i className="fa-solid fa-location-dot"></i>

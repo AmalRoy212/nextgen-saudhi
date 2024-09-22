@@ -237,6 +237,7 @@ const RegistrationForm = () => {
           className="border border-slate-300 p-3 rounded-xl text-slate-800"
         >
           <option value="">Select</option>
+          <option value="Digital Integration">Digital Integration</option>
           <option value="API Management">API Management</option>
           <option value="Enterprise iPaaS">Enterprise iPaaS</option>
           <option value="Business Process Management">Business Process Management</option>

@@ -19,7 +19,7 @@ const AboutSection = () => {
           </h1>
 
           <p className="font-medium text-[16px] text-justify w-[100%] text-[#838894]">
-            The UIC NextGen Automation Conference is a premier event tailored for technology leaders from enterprise companies and government bodies. This event is dedicated to exploring the latest advancements in automation and integration technologies. Industry leaders and tech innovators will come together to discuss and showcase cutting-edge solutions that are streamlining processes, enhancing efficiency, and transforming operations across both the private and public sectors. Attendees will gain valuable insights into the most impactful automation and integration tools, making it an essential gathering for those looking to drive innovation and stay ahead in the rapidly evolving tech landscape.
+            The UIC NextGen Automation & Data Conference is a premier event tailored for technology leaders from enterprise companies and government bodies. This event is dedicated to exploring the latest advancements in automation and integration technologies. Industry leaders and tech innovators will come together to discuss and showcase cutting-edge solutions that are streamlining processes, enhancing efficiency, and transforming operations across both the private and public sectors. Attendees will gain valuable insights into the most impactful automation and integration tools, making it an essential gathering for those looking to drive innovation and stay ahead in the rapidly evolving tech landscape.
           </p>
         </div>
       </div>
