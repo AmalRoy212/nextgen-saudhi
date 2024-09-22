@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <div className="bg-[#000814] flex flex-col min-h-screen w-screen">
       {/* Main Overview */}
-      <section className="relative bg-cover bg-center xl:h-screen sm:h-screen md:h-screen items-center">
+      <section className="relative bg-cover bg-center xl:h-600px sm:h-700px md:h-500px items-center pb-20">
         {/* Video background */}
         <video
           autoPlay
@@ -35,7 +35,7 @@ const Home = () => {
           <Header />
         </div>
 
-        <div className="max-w-[950px] xl:py-0 py-11 xl:max-w-[850px] xl:px-0 px-7 flex flex-col gap-5 mx-auto items-center justify-between text-center relative z-10">
+        <div className="max-w-[950px] mt-[-3rem] xl:py-0 py-11 xl:max-w-[850px] xl:px-0 px-7 flex flex-col gap-5 mx-auto items-center justify-between text-center relative z-10">
           <h1 className="text-xl sm:text-3xl md:text-5xl text-center xl:mt-16 md:mt-24 sm:mt-14 font-bold text-white">
             NextGen 
             <HighlightText text={" Automation Conference 2024"} />
@@ -110,14 +110,14 @@ const Home = () => {
 
       {/* Technologies */}
       <section
-        className="relative mx-auto mb-10 flex w-full max-w-maxContent flex-col items-center justify-between gap-8 bg-white text-white"
+        className="relative mx-auto flex w-full max-w-maxContent flex-col items-center justify-between gap-8 bg-white text-white"
         id="jobs"
       >
         <Technologies />
       </section>
 
       {/* Registration form */}
-      <section className="bg-[#000814] items-center">
+      <section className="bg-[#cbcbcb] items-center">
         <RegistrationFormSection />
       </section>
       

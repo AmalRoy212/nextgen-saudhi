@@ -11,7 +11,7 @@ const registrationDetails = [
     {
         icon: "BiWorld",
         heading: "Visit Us",
-        details: "South Al Khuwair, Bousher, Muscat, Oman",
+        details: "Dubai, UAE",
     },
 ];
 

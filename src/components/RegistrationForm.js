@@ -69,16 +69,16 @@ const RegistrationForm = () => {
 
   return (
     <form className="flex flex-col gap-7" onSubmit={handleSubmit(submitRegistrationForm)}>
-      <div className="flex flex-col gap-5 lg:flex-row">
-        <div className="flex flex-col gap-2 lg:w-[48%]">
-          <label htmlFor="first_name" className="label-style">
+      <div className="flex flex-col gap-5 lg:flex-row" >
+        <div className="flex flex-col gap-2 lg:w-[48%]" >
+          <label htmlFor="first_name" className="text-black">
             First Name
           </label>
           <input
             type="text"
             id="first_name"
             placeholder="Enter First Name"
-            className="form-style"
+            className="border border-slate-300 p-3 rounded-xl text-slate-800"
             {...register('first_name', { required: true })}
           />
           {errors.first_name && (
@@ -87,13 +87,13 @@ const RegistrationForm = () => {
         </div>
 
         <div className="flex flex-col gap-2 lg:w-[48%]">
-          <label htmlFor="last_name" className="label-style">
+          <label htmlFor="last_name" className="text-black">
             Last Name
           </label>
           <input
             type="text"
             id="last_name"
-            className="form-style"
+            className="border border-slate-300 p-3 rounded-xl text-slate-800"
             placeholder="Enter Last Name"
             {...register('last_name', { required: true })}
           />
@@ -105,14 +105,14 @@ const RegistrationForm = () => {
 
       <div className="flex flex-col gap-5 lg:flex-row">
         <div className="flex flex-col gap-2 lg:w-[48%]">
-          <label htmlFor="company" className="label-style">
+          <label htmlFor="company" className="text-black">
             Company Name
           </label>
           <input
             type="text"
             id="company"
             placeholder="Enter Company Name"
-            className="form-style"
+            className="border border-slate-300 p-3 rounded-xl text-slate-800"
             {...register('company', { required: true })}
           />
           {errors.company && (
@@ -121,14 +121,14 @@ const RegistrationForm = () => {
         </div>
 
         <div className="flex flex-col gap-2 lg:w-[48%]">
-          <label htmlFor="designation" className="label-style">
+          <label htmlFor="designation" className="text-black">
             Designation
           </label>
           <input
             type="text"
             id="designation"
             placeholder="Enter Designation"
-            className="form-style"
+            className="border border-slate-300 p-3 rounded-xl text-slate-800"
             {...register('designation', { required: true })}
           />
           {errors.designation && (
@@ -139,13 +139,13 @@ const RegistrationForm = () => {
 
       <div className="flex flex-col gap-5 lg:flex-row">
         <div className="flex flex-col gap-2 lg:w-[48%]">
-          <label htmlFor="contactNumber" className="label-style">
+          <label htmlFor="contactNumber" className="text-black">
             Contact Number
           </label>
           <input
             type="text"
             id="contactNumber"
-            className="form-style"
+            className="border border-slate-300 p-3 rounded-xl text-slate-800"
             placeholder="Enter Contact Number"
             {...register('contactNumber', {
               required: true,
@@ -163,7 +163,7 @@ const RegistrationForm = () => {
         </div>
 
         <div className="flex flex-col gap-2 lg:w-[48%]">
-          <label htmlFor="telephone" className="label-style">
+          <label htmlFor="telephone" className="text-black">
             Telephone
           </label>
           <input
@@ -177,7 +177,7 @@ const RegistrationForm = () => {
                 message: "Only numbers are allowed."
               }
             })}
-            className="form-style"
+            className="border border-slate-300 p-3 rounded-xl text-slate-800"
           />
           {errors.telephone && (
             <span className="-mt-1 text-[12px] text-yellow-400">
@@ -189,14 +189,14 @@ const RegistrationForm = () => {
 
       <div className="flex flex-col gap-5 lg:flex-row">
         <div className="flex flex-col gap-2 lg:w-[48%]">
-          <label htmlFor="email" className="label-style">
+          <label htmlFor="email" className="text-black">
             Email Address
           </label>
           <input
             type="email"
             id="email"
             placeholder="Enter Email Address"
-            className="form-style"
+            className="border border-slate-300 p-3 rounded-xl text-slate-800"
             {...register('email', { 
               required: true, 
               validate: validateEmail 
@@ -208,13 +208,13 @@ const RegistrationForm = () => {
         </div>
 
         <div className="flex flex-col gap-2 lg:w-[48%]">
-          <label htmlFor="event" className="label-style">
+          <label htmlFor="event" className="text-black">
             I am interested in
           </label>
           <select
             id="event"
             {...register('event', { required: true })}
-            className="form-style"
+            className="border border-slate-300 p-3 rounded-xl text-slate-800"
           >
             <option value="">Select</option>
             <option value="Attend as a Delegate">Attend as a Delegate</option>
@@ -228,18 +228,24 @@ const RegistrationForm = () => {
       </div>
 
       <div className="flex flex-col gap-2">
-        <label htmlFor="technologies" className="label-style">
+        <label htmlFor="technologies" className="text-black">
           Select the technologies you are interested in
         </label>
         <select
           id="technologies"
           {...register('technologies', { required: true })}
-          className="form-style"
+          className="border border-slate-300 p-3 rounded-xl text-slate-800"
         >
           <option value="">Select</option>
-          <option value="Digital Integration">Digital Integration</option>
+          <option value="API Management">API Management</option>
           <option value="BPM/DPA/BPA">Business Process Automation</option>
+          <option value="Data Management">Data Management</option>
+          <option value="Digital Process Automation">Digital Process Automation</option>
+          <option value="Data Virtulization">Data Virtulization</option>
+          <option value="Digital Integration">Digital Integration</option>
+          <option value="Enterprise iPaaS">Enterprise iPaaS</option>
           <option value="IT Consulting">IT Consulting</option>
+          <option value="Visual data science platform">Visual data science platform</option>
         </select>
         {errors.technologies && (
           <span className="-mt-1 text-[12px] text-yellow-400">Please select a technology.</span>
@@ -247,13 +253,13 @@ const RegistrationForm = () => {
       </div>
 
       <div className="flex flex-col gap-2">
-        <label htmlFor="budget" className="label-style">
+        <label htmlFor="budget" className="text-black">
           What is the budget allocated for the implementation of these technological advancements?
         </label>
         <select
           id="budget"
           {...register('budget', { required: true })}
-          className="form-style"
+          className="border border-slate-300 p-3 rounded-xl text-slate-800"
         >
           <option value="">Select</option>
           <option value="$10,000 - $50,000">$10,000 - $50,000</option>
@@ -278,14 +284,14 @@ const RegistrationForm = () => {
         <label htmlFor="comments" className="label-style">
           Please add your comments here if you would like to discuss any specific topics or explore any use cases in detail.
         </label>
-        <textarea className="form-style"
+        <textarea className="border border-slate-300 p-3 rounded-xl text-slate-800"
           {...register('comments', { required: false })}
           id="comments" rows="4" cols="50" placeholder='Comments'>
         </textarea>
       </div>
 
       <div className="flex flex-col gap-2">
-        <label htmlFor="consent" className="label-style flex items-start">
+        <label htmlFor="consent" className="label-style flex items-start text-black">
           <input
             type="checkbox"
             id="consent"
