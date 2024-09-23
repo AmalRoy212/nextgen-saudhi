@@ -7,7 +7,8 @@ import kissflowLogo from "../assets/images/kissflowUIC.svg";
 // import dbtLogo from "../assets/images/dbtUIC.svg";
 // import exalateLogo from "../assets/images/exalateUIC.svg";
 import cleverflowLogo from "../assets/images/CleverflowLogoImageUIC.avif";
-// import logo11 from "../assets/images/logo21.jpeg";
+import logo11 from "../assets/images/tibco.jpeg";
+import logo12 from "../assets/images/logosom.jpeg";
 // import odooLogo from "../assets/images/OdooUIC.svg";
 import HighlightText from "./HighlightText";
 
@@ -33,7 +34,7 @@ const Technologies = () => {
         <img src={solaceLogo} alt="Solace" className="h-32 w-auto" />
         <img src={denodoLogo} alt="Denodo" className="h-16 w-auto mb-5" />
         {/* <img src={dbtLogo} alt="dbt" className="h-10 w-auto" /> */}
-        {/* <img src={logo11} alt="exalate" className="h-32 w-auto" /> */}
+        <img src={logo11} alt="exalate" className="h-28 w-auto" />
         <img src={kissflowLogo} alt="KissFlow" className="h-80 w-auto mr-26 mr-8" />
         <div className="flex gap-2 justify-end items-end text-black ml-20 ">
           <img src={cleverflowLogo} alt="cleverflow" className="h-16 w-auto" />
@@ -41,6 +42,7 @@ const Technologies = () => {
             CleverFlow
           </p>
         </div>
+        <img src={logo12} alt="KissFlow" className="h-20 w-auto mr-26 mr-8" />
 
         {/* <img src={odooLogo} alt="odoo" className="h-11 w-auto ml-48 mb-1" /> */}
       </div>
