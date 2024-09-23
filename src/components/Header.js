@@ -9,7 +9,7 @@ const Header = () => {
   const navigate = useNavigate();
 
   const handleRegisterClick = () => {
-    navigate("/event/register-form");
+    navigate("/nextgen-event/register-form");
   };
 
   return (

@@ -241,7 +241,7 @@ const RegistrationForm = () => {
           <option value="API Management">API Management</option>
           <option value="Enterprise iPaaS">Enterprise iPaaS</option>
           <option value="Business Process Management">Business Process Management</option>
-          <option value="Digital Process Management">Digital Process Management</option>
+          <option value="Digital Process Automation">Digital Process Automation</option>
           <option value="Business Intelligence">Business Intellegence(BI)</option>
           <option value="Data Management">Data Management</option>
           <option value="Data Virtulization">Data Virtulization</option>

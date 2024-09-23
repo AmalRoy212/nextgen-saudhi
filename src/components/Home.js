@@ -37,8 +37,8 @@ const Home = () => {
 
         <div className="max-w-[950px] mt-[-3rem] xl:py-0 py-11 xl:max-w-[850px] xl:px-0 px-7 flex flex-col gap-5 mx-auto items-center justify-between text-center relative z-10">
           <h1 className="text-xl sm:text-3xl md:text-5xl text-center xl:mt-16 md:mt-24 sm:mt-14 font-bold text-white">
-            NextGen 
-            <HighlightText text={" Automation & Data Conference 2024"} />
+             
+            <HighlightText text={"NextGen Automation & Data Conference 2024"} />
           </h1>
 
           <div className="w-1/2 h-1 mt-2 bg-white mx-auto"></div>

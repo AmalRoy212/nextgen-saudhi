@@ -11,7 +11,7 @@ const isAuthenticated = () => {
 };
 
 const PrivateRoute = ({ element: Element }) => {
-  return isAuthenticated() ? <Element /> : <Navigate to="/event/admin" />;
+  return isAuthenticated() ? <Element /> : <Navigate to="/nextgen-event/admin" />;
 };
 
 const Body = () => {
@@ -29,7 +29,7 @@ const appRouter = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: "/event/register-form" ,
+    path: "/nextgen-event/register-form" ,
     element: <Body />,
   },
   {
@@ -37,11 +37,11 @@ const appRouter = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: "/event/admin",
+    path: "/nextgen-event/admin",
     element: <Admin />,
   },
   {
-    path: "/event/admin/dashboard",
+    path: "/nextgen-event/admin/dashboard",
     element: <PrivateRoute element={Dashboard} />,
   },
 ]);
