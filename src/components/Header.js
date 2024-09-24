@@ -5,7 +5,8 @@ import UIClogo from "../assets/images/UICLOGOIMAGE.png";
 
 const Header = () => {
   // const navItems = ["HOME", "ABOUT", "INDUSTRY", "JOBS"];
-  const navItems = ["HOME", "ABOUT", "SPEAKERS", "PARTNERS"];
+  const navItems = ["HOME", "ABOUT", "PARTNERS"];
+  // const navItems = ["HOME", "ABOUT", "SPEAKERS", "PARTNERS"];
   const navigate = useNavigate();
 
   const handleRegisterClick = () => {
@@ -18,7 +19,7 @@ const Header = () => {
       <nav className="max-w-[1200px] mx-auto flex items-center justify-between xl:px-0 px-7 relative z-10">
 
         {/* Logo */}
-        <Link to="/nextgen-event" className="cursor-pointer py-7 pr-7">
+        <Link to="https://utrechtitconsulting.com" className="cursor-pointer py-7 pr-7">
           <img src={UIClogo} className="w-[100px] md:w-[130px]" alt="UIC Logo" />
         </Link>
 

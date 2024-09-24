@@ -7,7 +7,7 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('https://utrechtitconsulting.com/api/getData.php', {
+        const response = await axios.get('https://utrechtitconsulting.com/api/getNextgenData.php', {
           headers: {
             'Content-Type': 'application/json',
           },

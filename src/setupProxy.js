@@ -11,7 +11,7 @@ module.exports = function(app) {
   app.use(
     '/api2',
     legacyCreateProxyMiddleware({
-      target: 'https://utrechtitconsulting.com/api/getData.php',
+      target: 'https://utrechtitconsulting.com/api/getNextgenData.php',
       changeOrigin: true,
     })
   );

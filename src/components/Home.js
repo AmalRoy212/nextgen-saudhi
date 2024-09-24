@@ -47,7 +47,7 @@ const Home = () => {
             <h2 className="text-lg sm:text-xl md:text-4xl mb-2 font-bold text-center text-white">
               Hosted By
             </h2>
-            <a href="/" className="cursor-pointer">
+            <a href="https://utrechtitconsulting.com" className="cursor-pointer">
               <img
                 src={UIClogo}
                 className="w-[140px] md:w-[200px]"
@@ -111,7 +111,7 @@ const Home = () => {
       {/* Technologies */}
       <section
         className="relative mx-auto flex w-full max-w-maxContent flex-col items-center justify-between gap-8 bg-white text-white"
-        id="jobs"
+        id="partners"
       >
         <Technologies />
       </section>

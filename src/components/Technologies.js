@@ -29,19 +29,19 @@ const Technologies = () => {
       </div>
 
       <div className="flex flex-wrap justify-center items-center mt-12 gap-3">
-        <img src={workatoLogo} alt="Workato" className="h-56 w-auto " />
+        <img src={workatoLogo} alt="Workato" className="h-56 w-auto md:ml-[-5rem]" />
         {/* <img src={makeLogo} alt="Make" className="h-11 w-auto" /> */}
-        <img src={solaceLogo} alt="Solace" className="h-32 w-auto" />
+        <img src={solaceLogo} alt="Solace" className="h-32 w-auto md:mr-20 md:ml-10" />
         <img src={denodoLogo} alt="Denodo" className="h-16 w-auto mb-5" />
         {/* <img src={dbtLogo} alt="dbt" className="h-10 w-auto" /> */}
         <img src={logo11} alt="exalate" className="h-20 w-auto" />
-        <img src={kissflowLogo} alt="KissFlow" className="h-80 w-auto mr-26 mr-8" />
         <div className="flex gap-2 justify-end items-end text-black ml-20 ">
           <img src={cleverflowLogo} alt="cleverflow" className="h-16 w-auto" />
           <p className="text-2xl sm:text-2xl md:text-5xl mb-2  font-bold font-sans  text-center text-black">
             CleverFlow
           </p>
         </div>
+        <img src={kissflowLogo} alt="KissFlow" className="h-80 w-auto mr-26 mr-8" />
         {/* <img src={odooLogo} alt="odoo" className="h-11 w-auto ml-48 mb-1" /> */}
       </div>
     </div>
