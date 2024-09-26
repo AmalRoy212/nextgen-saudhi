@@ -246,6 +246,7 @@ const RegistrationForm = () => {
           <option value="Data Management">Data Management</option>
           <option value="Data Virtulization">Data Virtulization</option>
           <option value="IT Consulting">IT Consulting</option>
+          <option value="Real Time Analytics">Real Time Analytics</option>
         </select>
         {errors.technologies && (
           <span className="-mt-1 text-[12px] text-yellow-400">Please select a technology.</span>

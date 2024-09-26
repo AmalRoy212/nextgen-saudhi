@@ -68,7 +68,7 @@ const KeyTopics = () => {
           </p>
         </div>
       </div>
-      <div className='w-full flex gap-x-10 gap-y-10 flex-col md:flex-row mt-20 justify-center'>
+      {/* <div className='w-full flex gap-x-10 gap-y-10 flex-col md:flex-row mt-20 justify-center'>
         <div className='md:w-1/2 flex flex-col gap-y-10 bg-slate-100 rounded-xl shadow-2xl'>
           <img className='rounded-xl w-full h-[300px] object-cover shadow-2xl' src={realtime} alt='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnnZ-M6_2xgUWKt5mM5KS-y5rkuFv0Rle8Iw&s'/>
           <h1 className='w-full flex justify-center items-center text-2xl'><HighlightText text="Real Time Analytics" /></h1>
@@ -76,7 +76,7 @@ const KeyTopics = () => {
             API Management enables secure, scalable, and efficient integration of applications, ensuring seamless connectivity and data flow across systems.
           </p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
