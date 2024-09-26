@@ -245,8 +245,8 @@ const RegistrationForm = () => {
           <option value="Business Intelligence">Business Intellegence(BI)</option>
           <option value="Data Management">Data Management</option>
           <option value="Data Virtulization">Data Virtulization</option>
-          <option value="IT Consulting">IT Consulting</option>
           <option value="Real Time Analytics">Real Time Analytics</option>
+          <option value="IT Consulting">IT Consulting</option>
         </select>
         {errors.technologies && (
           <span className="-mt-1 text-[12px] text-yellow-400">Please select a technology.</span>
