@@ -233,7 +233,7 @@ const RegistrationForm = () => {
         </label>
         <select
           id="technologies"
-          {...register('technologies', { required: true })}
+          {...register('technologies', { required: false })}
           className="border border-slate-300 p-3 rounded-xl text-slate-800"
         >
           <option value="">Select</option>
@@ -260,7 +260,7 @@ const RegistrationForm = () => {
         </label>
         <select
           id="budget"
-          {...register('budget', { required: true })}
+          {...register('budget', { required: false })}
           className="border border-slate-300 p-3 rounded-xl text-slate-800"
         >
           <option value="">Select</option>
