@@ -41,7 +41,7 @@ const RegistrationForm = () => {
     }
 
     try {
-      const response = await axios.post('https://utrechtitconsulting.com/api/nextgen-abudhabi-registration.php', cleanedData, {
+      const response = await axios.post('https://utrechtitconsulting.com/api/nextgen-saudi-registrations.php', cleanedData, {
         headers: {
           'Content-Type': 'application/json',
         },
