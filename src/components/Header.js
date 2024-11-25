@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import UIClogo from "../assets/images/UICLOGOIMAGE.png";
 
 const Header = () => {
@@ -8,14 +8,16 @@ const Header = () => {
   const navItems = ["HOME", "ABOUT", "PARTNERS"];
   // const navItems = ["HOME", "ABOUT", "SPEAKERS", "PARTNERS"];
   const navigate = useNavigate();
+  const location = useLocation();
+
 
   const handleRegisterClick = () => {
-    navigate("/nextgen-event/register-form");
+    navigate("/register-form");
   };
 
   return (
     <header>
-     
+
       <nav className="max-w-[1200px] mx-auto flex items-center justify-between xl:px-0 px-7 relative z-10">
 
         {/* Logo */}
@@ -30,7 +32,7 @@ const Header = () => {
               key={index}
               className="font-semibold py-7 hover:text-[#928f96] cursor-pointer transition-all duration-200 relative group"
             >
-              <a className="text-sm font-mullish font-thin" href={`#${item.toLowerCase()}`}>{item}</a>
+              <a className="text-sm font-mullish font-thin" href={location.pathname !== "/register-form" ? `#${item.toLowerCase()}` : '/'}>{item}</a>
               <div className="absolute bottom-5 w-full h-1 bg-[#928f96] hidden group-hover:block transition-all duration-200"></div>
             </li>
           ))}
