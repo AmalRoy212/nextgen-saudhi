@@ -4,7 +4,7 @@ import UIClogo from "../assets/images/UICLOGOIMAGE.png";
 
 const Layout = () => {
   const location = useLocation();
-  const isHomePage = location.pathname === "/nextgen-event" || location.pathname === "/";
+  const isHomePage = location.pathname === "/" || location.pathname === "/";
 
   return (
     <div className="bg-[#000814] flex flex-col min-h-screen w-screen">
