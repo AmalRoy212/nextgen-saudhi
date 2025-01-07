@@ -56,14 +56,14 @@ const Home = () => {
             </a>
           </div>
 
-          <div className="flex items-center justify-center gap-6 text-lg sm:text-xl md:text-2xl mt-2 text-center text-white text-transparent bg-clip-text font-bold">
+          <div className="flex items-center justify-center gap-6 text-xl sm:text-xl md:text-xl mt-2 text-center text-white text-transparent bg-clip-text font-bold">
             <div className="flex gap-2 justify-center items-center">
               <i className="fa-regular fa-calendar"></i>
               5 February 2025
             </div>
             <div className="flex gap-2 justify-center items-center">
               <i className="fa-solid fa-hotel"></i>
-              Riyadh, KSA
+               HOLIDAY INN RIYADH THE BUSINESS DISTRICT, Riyadh, KSA
             </div>
             {/* <div className="flex gap-2 justify-center items-center">
               <i className="fa-solid fa-location-dot"></i>
