@@ -8,6 +8,7 @@ import salesforce from "../assets/images/Salesforce.com_logo.png";
 // import dbtLogo from "../assets/images/dbtUIC.svg";
 // import exalateLogo from "../assets/images/exalateUIC.svg";
 import cleverflowLogo from "../assets/images/CleverflowLogoImageUIC.avif";
+import logoin from "../assets/images/logo-in.jpeg";
 import logo11 from "../assets/images/tibcologo.jpeg";
 // import logo12 from "../assets/images/logosom.jpeg";
 // import odooLogo from "../assets/images/OdooUIC.svg";
@@ -39,10 +40,10 @@ const Technologies = () => {
         <img src={salesforce} alt="exalate" className="h-28 w-auto md:ml-14" />
         <img src={kissflowLogo} alt="KissFlow" className="h-80 w-auto " />
         <div className="flex gap-2 justify-end items-end text-black">
-          <img src={cleverflowLogo} alt="cleverflow" className="h-16 w-auto" />
-          <p className="text-2xl sm:text-2xl md:text-5xl mb-2  font-bold font-sans  text-center text-black">
-            CleverFlow
-          </p>
+          <img src={logoin} alt="cleverflow" className="h-35 w-auto" />
+            {/* <p className="text-2xl sm:text-2xl md:text-5xl mb-2  font-bold font-sans  text-center text-black">
+              CleverFlow
+            </p> */}
         </div>
         {/* <img src={odooLogo} alt="odoo" className="h-11 w-auto ml-48 mb-1" /> */}
       </div>
