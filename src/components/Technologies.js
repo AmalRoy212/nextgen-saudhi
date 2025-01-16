@@ -4,7 +4,7 @@ import workatoLogo from "../assets/images/workato UIC.svg";
 import solaceLogo from "../assets/images/solaceUIC.svg";
 import denodoLogo from "../assets/images/denodoUIC.svg";
 import kissflowLogo from "../assets/images/kissflowUIC.svg";
-import salesforce from "../assets/images/Salesforce.com_logo.png";
+// import salesforce from "../assets/images/Salesforce.com_logo.png";
 // import dbtLogo from "../assets/images/dbtUIC.svg";
 // import exalateLogo from "../assets/images/exalateUIC.svg";
 import cleverflowLogo from "../assets/images/CleverflowLogoImageUIC.avif";
@@ -37,7 +37,7 @@ const Technologies = () => {
         <img src={denodoLogo} alt="Denodo" className="h-16 w-auto mb-5" />
         {/* <img src={dbtLogo} alt="dbt" className="h-10 w-auto" /> */}
         <img src={logo11} alt="exalate" className="h-20 w-auto md:-ml-10" />
-        <img src={salesforce} alt="exalate" className="h-28 w-auto md:ml-14" />
+        {/* <img src={salesforce} alt="exalate" className="h-28 w-auto md:ml-14" /> */}
         <img src={kissflowLogo} alt="KissFlow" className="h-80 w-auto " />
         <div className="flex gap-2 justify-end items-end text-black">
           <img src={logoin} alt="cleverflow" className="h-35 w-auto" />
