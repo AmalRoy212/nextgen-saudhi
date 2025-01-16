@@ -63,7 +63,7 @@ const Home = () => {
             </div>
             <div className="flex gap-2 justify-center items-center">
               <i className="fa-solid fa-hotel"></i>
-              holiday inn riyadh the business district, Riyadh, KSA
+              Holiday Inn Riyadh The Business District, Riyadh, KSA
             </div>
             {/* <div className="flex gap-2 justify-center items-center">
               <i className="fa-solid fa-location-dot"></i>
